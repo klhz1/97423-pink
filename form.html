@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>PINK</title>
+	<meta charset="utf-8">
+</head>
+
+<body>
+	<header class="main-header">
+		<div class="container">
+			<div class="top-menu">
+				<span>PINK</span>
+				<a href="#" class="mobile-menu-btn"></a>
+			</div>
+			<div class="mobile-menu">
+				<span>PINK</span>
+				<a href="#" class="close-btn">x</a>
+				<ul>
+					<li><a href="#">Информация</a>
+					</li>
+					<li><a href="#">Блог</a>
+					</li>
+					<li><a href="#">Отзывы</a>
+					</li>
+					<li><a href="#">Конкурс</a>
+					</li>
+				</ul>
+			</div>
+			<h1>Конкурс на самое безбашеное путешествие с Пинк</h1>
+		</div>
+	</header>
+	<div class="container">
+		<p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+
+		<form method="post" class="form">
+			<label class="field">Имя:*
+				<input type="text" name="name" value="Введите ваше имя">
+			</label>
+			<label class="field">Фамилия:*
+				<input type="text" name="surname" value="Укажите фамилию">
+			</label>
+			<label class="field">Отчество:*
+				<input type="text" name="patronim" value="Ну и отчество тоже">
+			</label>
+
+
+			<div class="which-app">С каким приложением путешествовали?*
+				<ul>
+					<li>
+						<input type="radio" name="app" id="ios">
+						<label for="adaptive">Pink для iOS</label>
+					</li>
+					<li>
+						<input type="radio" name="app" id="android">
+						<label for="adaptive">Pink на Android</label>
+					</li>
+					<li>
+						<input type="radio" name="app" id="winphone">
+						<label for="adaptive">Windows Phone</label>
+					</li>
+				</ul>
+			</div>
+
+			<h1>Когда вы путешествовали? *</h1>
+			<label class="field">
+				<input type="date" name="name" value="1 апреля 2015"> дата выезда
+			</label>
+			<label class="field">
+				<input type="text" name="name" value="10 дней"> Продолжительность
+			</label>
+			<label class="field">
+				<input type="date" name="name" value="1 апреля 2015"> Дата Возвращения
+			</label>
+			<div class="travelers">
+				<label class="field">Количество попутчиков *
+					<input type="text" name="name" value="2 чел">
+				</label>
+
+				<ol>
+					<li>
+						<label class="field">Имя:*
+							<input type="text" name="name" value="Введите ваше имя">
+						</label>
+
+						<label class="field">ПРОЗВИЩЕ:
+							<input type="text" name="name" value="Ну как же без этого!">
+						</label>
+					</li>
+					<li>
+						<label class="field">Имя:*
+							<input type="text" name="name" value="Введите ваше имя">
+						</label>
+
+						<label class="field">ПРОЗВИЩЕ:
+							<input type="text" name="name" value="Ну как же без этого!">
+						</label>
+					</li>
+				</ol>
+			</div>
+			<div class="achievments">
+				<h2>Ваши безбашенные достижения в путешествии</h2>
+				<ul>
+					<li>
+						<input type="checkbox" name="achievments" id="selfie" checked="checked">
+						<label for="selfie">Сделал селфи с акулой
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="achievments" id="selfie" checked="checked">
+						<label for="selfie">Обгорел на пляже
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="achievments" id="selfie">
+						<label for="selfie">Видел Чака Норриса
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="achievments" id="selfie">
+						<label for="selfie">Накупил сувениров
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="achievments" id="selfie" checked="checked">
+						<label for="selfie">Удержал башню
+						</label>
+					</li>
+					<li>
+						<input type="checkbox" name="achievments" id="selfie">
+						<label for="selfie">Разгромил отель
+						</label>
+					</li>
+			</div>
+			<div class="photos">
+				<h2>ВАШИ ФОТОГРАФИИ из поездки *</h2>
+				<input type="file" name="img">
+			</div>
+			<input class="button" type="submit" value="Отправить форму">
+		</form>
+	</div>
+	<footer>
+		<span>*</span> — обязательные поля
+
+		<img src="img/glasses.png" width="145" height="40" alt="">
+		<div class="social">
+			<a href="#" class="social-btn icon-tw"></a>
+			<a href="#" class="social-btn icon-facebook"></a>
+			<a href="#" class="social-btn icon-vector"></a>
+		</div>
+		Разработано
+		<img src="img/htmlacad-logo.png" width="27" height="34" alt="">
+	</footer>
+</body>
