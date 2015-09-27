@@ -1,79 +1,83 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-	<title>PINK</title>
 	<meta charset="utf-8">
+	<title>PINK</title>
 </head>
-
 <body>
 	<header class="main-header">
-		<div class="container">
-			<div class="top-menu">
-				<span>PINK</span>
-				<a href="#" class="mobile-menu-btn"></a>
-			</div>
-			<div class="mobile-menu">
-				<span>PINK</span>
-				<a href="#" class="close-btn">x</a>
-				<ul>
-					<li><a href="#">Информация</a>
+		<nav class="navigation">
+			<a class="navigation__logo" href="#">PINK</a>
+			<a class="navigation__menu-open" href="#"></a>
+			<div class="navigation__menu--mobile">
+				<a class="navigation__logo" href="#">PINK</a>
+				<a href="#" class="navigation__menu-close"></a>
+				<ul class="navigation__menu-list">
+					<li class="navigation__menu-list-item"><a href="#">Информация</a>
 					</li>
-					<li><a href="#">Блог</a>
+					<li class="navigation__menu-list-item"><a href="#">Блог</a>
 					</li>
-					<li><a href="#">Отзывы</a>
+					<li class="navigation__menu-list-item"><a href="#">Отзывы</a>
 					</li>
-					<li><a href="#">Конкурс</a>
+					<li class="navigation__menu-list-item"><a href="#">Конкурс</a>
 					</li>
 				</ul>
 			</div>
-			<h1>Взгляните на жизнь иначе!</h1>
-			<img src="img/intro.png" width="320" height="313" alt="">
-			<a href="#" class="download-app">Скачать приложение</a>
-			<img src="img/platform-logos.png" width="205" height="57" alt="">
-			<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+		</nav>
+		<h1 class="page-title">Взгляните на жизнь иначе!</h1>
+
+		<img class="intro-img" src="img/intro.png" width="320" height="313" alt="">
+		<div class="app-block">
+			<a class="app-block__download-btn" href="#" class="download-app">Скачать приложение</a>
+			<img class="app-block__platform-logos" src="img/platform-logos.png" width="205" height="57" alt=""> 
+			<p class="app-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
 		</div>
-	</header>
-	<div class="info">
-		<h1>Устали от серости мегаполиса?
-				<br>
-				<br>Нам есть, что вам предложить!</h1>
-		<p>
-			<h2>Поднимает настроение</h2>Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-		<p>
-			<h2>Меняет мир вокруг</h2>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-		<p>
-			<h2>Заводит новых друзей</h2>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+	</div>
+</header>
+<main>
+	<div class="features">
+		<h1 class="features__title">
+			Устали от серости мегаполиса?
+			<br>
+			<br>Нам есть, что вам предложить!
+		</h1>
+		<div class="features-item">
+			<h2 class="features-item__title">Поднимает настроение</h2>
+			<p class="features-item__text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+		</div>
+		<div class="features-item">
+			<h2 class="features-item__title">Меняет мир вокруг</h2>
+			<p class="features-item__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+		</div>
+		<div class="features-item">
+			<h2 class="features-item__title">Заводит новых друзей</h2>
+			<p class="features-item__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+		</div>
 		<img src="img/iphone-screen.jpg" width="157" height="320" alt="">
+
 	</div>
 	<div class="review">
-		<p>
-			<h2>Николай Петров</h2>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+		<h2 class="review__title">Николай Петров</h2>
+		<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 	</div>
-	<div class="price">
-		<div class="price-head">
-			<img src="img/hit.png" width="74" height="73" alt=""> Стандарт
-			<span class="usd">3,99 USD</span>
+	<div class="offers-block">
+		<div class="offers-block__header">
+			Стандарт
+			<span class="offers-block__price">3,99 USD</span>
 		</div>
-
-		<ul>
-			<li>Розовый фильтр</li>
-			<li>Смайлики</li>
-			<li>Комментарии</li>
+			<ul class="offers-block__options-list">
+			<li class="offers-block__options-item">Розовый фильтр</li>
+			<li class="offers-block__options-item">Смайлики</li>
+			<li class="offers-block__options-item">Комментарии</li>
 		</ul>
 	</div>
-	<div class="contacts">
-		<div class="container">
-			<h1>Остались вопросы? Свяжитесь с нами!</h1>
-			<p>Звоните:<span>+7 (812) 555-66-66</span>
-			</p>
-			<p>Пишите:<span>mail@htmlacademy.ru</span>
-			</p>
-			<p>Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8 </span>
-			</p>
+		<div class="contacts">
+			<h1 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h1>
+			<p>Звоните:<span>+7 (812) 555-66-66</span></p>
+			<p>Пишите:<span>mail@htmlacademy.ru</span></p>
+			<p>Приезжайте в гости:<span>ул. Большая Конюшенная, 19/8 </span></p>
 		</div>
-	</div>
-
+	</main>
 
 </body>
 
