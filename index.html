@@ -3,16 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title>PINK</title>
+	<link href="css/style.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="main-header">
+	<div class="container">
 		<nav class="navigation">
 			<a class="navigation__logo" href="#">PINK</a>
 			<a class="navigation__menu-open" href="#"></a>
 			<div class="navigation__menu">
 				
-				<a href="#" class="navigation__menu-close"></a>
+				
 				<ul class="navigation__menu-list">
+					<li class="navigation__menu-item"><a href="#" class="navigation__menu-close"></a>
+					</li>
 					<li class="navigation__menu-item"><a href="#">Информация</a>
 					</li>
 					<li class="navigation__menu-item"><a href="#">Блог</a>
@@ -30,11 +35,12 @@
 		<div class="app-block">
 			<a class="app-block__download-btn" href="#" class="download-app">Скачать приложение</a>
 			<img class="app-block__platform-logos" src="img/platform-logos.png" width="205" height="57" alt=""> 
-			<p class="app-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Window</p>
+			<p class="app-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
 		</div>
 	</div>
 </header>
 <main>
+<div class="container">
 	<div class="features">
 		<div class="features__title">
 			<p>Устали от серости мегаполиса?</p>
@@ -52,8 +58,8 @@
 		<div class="features__item">
 			<h2 class="features__item-title">Заводит новых друзей</h2>
 			<p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+		<img class="iphone-img" src="img/iphone-screen.png" width="157" height="280" alt="">
 		</div>
-		<img src="img/iphone-screen.jpg" width="157" height="320" alt="">
 
 	</div>
 	<div class="review">
@@ -61,21 +67,35 @@
 		<p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 	</div>
 	<div class="offers-block">
-		<div class="offers-block__header">
-			Стандарт
-			<span class="offers-block__price">3,99 USD</span>
-		</div>
-			<ul class="offers-block__options-list">
-			<li class="offers-block__options-item">Розовый фильтр</li>
-			<li class="offers-block__options-item">Смайлики</li>
-			<li class="offers-block__options-item">Комментарии</li>
-		</ul>
+		<table class="offers-table">
+		<tr class="offers-table__row">
+			<th class="offers-table__header">База<span class="offers-table__header-price">3,99 USD</span></th>
+			<th class="offers-table__header offers-table__header--hit">Стандарт<span class="offers-table__header-price">3,99 USD</span></th>
+			<th class="offers-table__header">Анлим<span class="offers-table__header-price">3,99 USD</span></th>
+		</tr>
+		<tr class="offers-table__row">
+			<td class="offers-table__option offers-table__option--green">Розовый фильтр</td>
+			<td class="offers-table__option offers-table__option--green">Розовый фильтр</td>
+			<td class="offers-table__option offers-table__option--green">Розовый фильтр</td>
+		</tr>
+		<tr class="offers-table__row">
+			<td class="offers-table__option offers-table__option--red">Смайлики</td>
+			<td class="offers-table__option offers-table__option--green">Смайлики</td>
+			<td class="offers-table__option offers-table__option--green">Смайлики</td>
+		</tr>
+		<tr class="offers-table__row">
+			<td class="offers-table__option offers-table__option--red">Комментарии</td>
+			<td class="offers-table__option offers-table__option--red">Комментарии</td>
+			<td class="offers-table__option offers-table__option--green">Комментарии</td>
+		</tr>
+		</table>
 	</div>
 		<div class="contacts">
 			<div class="contacts__title">Остались вопросы? Свяжитесь с нами!</div>
-			<p class="contacts__text">Звоните:<span class="contacts__text contacts__text--red">+7 (812) 555-66-66</span></p>
-			<p class="contacts__text">Пишите:<span class="contacts__text contacts__text--red">mail@htmlacademy.ru</span></p>
-			<p class="contacts__text">Приезжайте в гости:<span class="contacts__text contacts__text--red">ул. Большая Конюшенная, 19/8 </span></p>
+			<p class="contacts__text">Звоните:<p class="contacts__text contacts__text--red">+7 (812) 555-66-66</p></p>
+			<p class="contacts__text">Пишите:<p class="contacts__text contacts__text--red">mail@htmlacademy.ru</p></p>
+			<p class="contacts__text">Приезжайте в гости:<p class="contacts__text contacts__text--red">ул. Большая Конюшенная, 19/8 </p></p>
+		</div>
 		</div>
 	</main>
 
