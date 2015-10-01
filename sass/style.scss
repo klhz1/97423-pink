@@ -5,50 +5,50 @@ $dark-blue: #283645;
 body и а */
 
 body {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
 }
 a { color:white;
-	text-decoration: none}
+  text-decoration: none}
 
-	.container {
-		width: $width;
-		overflow: hidden;
-	}
-	.main-header {
-		background: url("../img/header-bg.jpg") no-repeat left top;
-		position: relative;
-	}
+  .container {
+    width: $width;
+    overflow: hidden;
+  }
+  .main-header {
+    background: url("../img/header-bg.jpg") no-repeat left top;
+    position: relative;
+  }
 
-	.navigation {
-		display: block;
-		width: $width;
-		height: 65px;
-		background-color: rgba(0,0,0,.3);
-		position: relative;
+  .navigation {
+    display: block;
+    width: $width;
+    height: 65px;
+    background-color: rgba(0,0,0,.3);
+    position: relative;
 
-		&__logo {
-			display: block;
-			width: 115px;
-			height: 65px;
-			font-size: 32px;
-			line-height: 65px;
-			font-weight: 300;
-			padding: 0 20px;
-			text-decoration: none;
-			color: white;
-			z-index: 100;
-			position: relative;
-		}
+    &__logo {
+      display: block;
+      width: 115px;
+      height: 65px;
+      font-size: 32px;
+      line-height: 65px;
+      font-weight: 300;
+      padding: 0 20px;
+      text-decoration: none;
+      color: white;
+      z-index: 100;
+      position: relative;
+    }
 
-		&__menu {
-			display: none;
-			position: absolute;
-			top: 0;
-			left: 0;
-			&--show {
-				display: block;
-			}
+    &__menu {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      &--show {
+       display: block;
+     }
 
      &-open {
        display: block;
@@ -93,22 +93,22 @@ a { color:white;
    }
  }
  .page-title {
-   font-size: 24px;
-   color: white;
-   margin: 25px 40px;
-   text-align: center;
-   font-weight: lighter;
- }
- .intro-img {
-   margin: 0 0 -4px 0;
- }
- .app-block {
-   background-color: #1d2631;
-   padding: 30px 0;
-   position: relative;
-   z-index: 2;
-   margin-top: -28px;
-   &__download-btn {
+  font-size: 24px;
+  color: white;
+  margin: 25px 40px;
+  text-align: center;
+  font-weight: lighter;
+}
+.intro-img {
+  margin: 0 0 -4px 0;
+}
+.app-block {
+  background-color: #1d2631;
+  padding: 30px 0;
+  position: relative;
+  z-index: 2;
+  margin-top: -28px;
+  &__download-btn {
     display: block;
     width: 275px;
     height: 50px;
@@ -135,117 +135,117 @@ a { color:white;
   }
 }
 .features {
-	background-color: #f2f2f2;
-	&__title {
-		font-size: 24px;
-		color: $dark-blue;
-		text-align: center;
-		padding: 40px 40px;
-		background-color: white;
-	}
-	&__item {
+  background-color: #f2f2f2;
+  &__title {
+    font-size: 24px;
+    color: $dark-blue;
+    text-align: center;
+    padding: 40px 40px;
+    background-color: white;
+  }
+  &__item {
 
-		text-align: center;
-		margin: 40px 25px;
+    text-align: center;
+    margin: 40px 25px;
 
-		&-title {
-			color: black;
-			font-size: 18px;
-			margin: 0;
-			padding: 0 0 20px 0;
-		}
-		&-text {
-			color: $dark-blue;
-			font-size: 14px;
-			margin: 0 0 40px 0;
-		}
-	}
+    &-title {
+      color: black;
+      font-size: 18px;
+      margin: 0;
+      padding: 0 0 20px 0;
+    }
+    &-text {
+      color: $dark-blue;
+      font-size: 14px;
+      margin: 0 0 40px 0;
+    }
+  }
 }
 .review {
-	margin: 50px 0 100px;
-	text-align: center;
-	padding: 0 20px;
-	&__author {
-		font-size: 18px;
-		line-height: 30px;
-		font-weight: bold;
-	}
-	&__text {
-		font-size: 14px;
-		line-height: 30px;
-	}
+  margin: 50px 0 100px;
+  text-align: center;
+  padding: 0 20px;
+  &__author {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 30px;
+  }
 }
 
 .offers-block {
-	background: #f2f2f2;
-	padding: 90px 0 100px;
+  background: #f2f2f2;
+  padding: 90px 0 100px;
 }
 
 .offers-table {
-	table-layout:fixed;
-	width: 833px;
-	margin-left: -256px;
-	border: 2px solid #e5e5e5;
-	border-collapse: collapse;
-	text-transform: uppercase;
+  table-layout:fixed;
+  width: 833px;
+  margin-left: -256px;
+  border: 2px solid #e5e5e5;
+  border-collapse: collapse;
+  text-transform: uppercase;
 
 
-	&__header {
-		height: 100px;
-		background: $dark-blue;
-		color: white;
-		font-size: 18px;
-		font-weight: bold;
-		line-height: 30px;
-		border: 2px solid #e5e5e5;
-		border-collapse: collapse;
-		&--hit {
-			background: $dark-blue url('../img/hit.png') no-repeat;
-		}
-	}
+  &__header {
+    height: 100px;
+    background: $dark-blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    border: 2px solid #e5e5e5;
+    border-collapse: collapse;
+    &--hit {
+      background: $dark-blue url('../img/hit.png') no-repeat;
+    }
+  }
 
-	&__header-price {
-		display: block;
-		font-weight: normal;
-	}
+  &__header-price {
+    display: block;
+    font-weight: normal;
+  }
 
-	&__option {
-		width: 275px;
-		height: 60px;
-		padding: 0 22px;
-		font-size: 14px;
-		border: 2px solid #e5e5e5;
-		border-collapse: collapse;
-		background: white;
+  &__option {
+    width: 275px;
+    height: 60px;
+    padding: 0 22px;
+    font-size: 14px;
+    border: 2px solid #e5e5e5;
+    border-collapse: collapse;
+    background: white;
 
-		&--red {
-			background: white url('../img/option-red.png') no-repeat 90% 50%;
-		}
-		&--green {
-			background: white url('../img/option-green.png') no-repeat 90% 50%;
-		}
-	}
+    &--red {
+      background: white url('../img/option-red.png') no-repeat 90% 50%;
+    }
+    &--green {
+      background: white url('../img/option-green.png') no-repeat 90% 50%;
+    }
+  }
 }
 .contacts {
-	text-align: center;
+  text-align: center;
 
-	&__title {
-		font-size: 24px;
-		color: $dark-blue;
-		padding: 40px 40px;
-		background-color: white;
-	}
+  &__title {
+    font-size: 24px;
+    color: $dark-blue;
+    padding: 40px 40px;
+    background-color: white;
+  }
 
-	&__text{
-		padding: 0 40px;
-		font-size: 18px;
-		line-height: 18px;
-		font-weight: bold;
-		&--red{
-			font-size: 24px;
-			line-height: 24px;
-			font-weight: lighter;
-			color: #d22856;
-		}
-	}
+  &__text{
+    padding: 0 40px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    &--red{
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: lighter;
+      color: #d22856;
+    }
+  }
 }
