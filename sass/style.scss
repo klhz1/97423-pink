@@ -1,8 +1,5 @@
-$width: 320px;
-$dark-blue: #283645;
+@import 'variables';
 
-/*тут вопрос как с этими двумя селекторами лучше поступить?
-body и а */
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -13,11 +10,16 @@ a { color:white;
 
   .container {
     width: $width;
-    overflow: hidden;
   }
   .main-header {
     background: url("../img/header-bg.jpg") no-repeat left top;
     position: relative;
+  }
+  .main-container
+  {
+    width: $width - 40px;
+    padding: 0 20px;
+
   }
 
   .navigation {
@@ -96,18 +98,19 @@ a { color:white;
     font-size: 24px;
     color: white;
     margin: 25px 40px;
+    padding-bottom: 50px;
     text-align: center;
     font-weight: lighter;
   }
   .intro-img {
-    margin: 0 0 -4px 0;
+    margin: -55px 0 -40px 0;
   }
   .app-block {
     background-color: #1d2631;
     padding: 30px 0;
     position: relative;
     z-index: 2;
-    margin-top: -28px;
+    margin-top: 0px;
     &__download-btn {
       display: block;
       width: 275px;
@@ -135,7 +138,7 @@ a { color:white;
     }
   }
   .features {
-    background-color: #f2f2f2;
+    background-color: $bg-color;
     &__title {
       font-size: 24px;
       color: $dark-blue;
@@ -177,15 +180,16 @@ a { color:white;
   }
 
   .offers-block {
-    background: #f2f2f2;
+    background: $bg-color;
     padding: 90px 0 100px;
+    overflow: hidden;
   }
 
   .offers-table {
     table-layout:fixed;
     width: 833px;
     margin-left: -256px;
-    border: 2px solid #e5e5e5;
+    border: 2px solid $border-color;
     border-collapse: collapse;
     text-transform: uppercase;
 
@@ -197,7 +201,7 @@ a { color:white;
       font-size: 18px;
       font-weight: bold;
       line-height: 30px;
-      border: 2px solid #e5e5e5;
+      border: 2px solid $border-color;
       border-collapse: collapse;
       &--hit {
         background: $dark-blue url('../img/hit.png') no-repeat;
@@ -214,7 +218,7 @@ a { color:white;
       height: 60px;
       padding: 0 22px;
       font-size: 14px;
-      border: 2px solid #e5e5e5;
+      border: 2px solid $border-color;
       border-collapse: collapse;
       background: white;
 
@@ -245,7 +249,215 @@ a { color:white;
         font-size: 24px;
         line-height: 24px;
         font-weight: lighter;
-        color: #d22856;
+        color: $pink;
       }
     }
+  }
+
+  .form{
+    &__header {
+      font-size:14px;
+      line-height: 30px;
+      text-align: center;
+      padding: 20px 0;
+      color: $dark-blue;
+    }
+
+    &__field {
+      display: block;
+      width: 100%;
+      height: 63px;
+      font-size: 18px;
+      line-height: 30px;
+      color: $dark-blue;
+      border: 2px solid $border-color;
+      border-radius: 2px;
+      padding: 0 20px;
+      margin: auto;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      &-label {
+        display: block;
+        color: $pink;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 30px;
+        color: $pink;
+        padding: 5px 0 5px 20px;
+      }
+    }
+    &__title {
+      display: block;
+      color: $pink;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 18px;
+      color: $pink;
+      padding: 5px 10px 20px;
+      text-align: center;
+      font-weight: 400;
+      &--blue {
+        color: $dark-blue;
+      }
+    }
+    &__list {
+      list-style: none;
+      padding: 5px 0 0;
+      margin: 0;
+
+      &-item {
+        font-size: 18px;
+        line-height: 30px;
+        padding: 0 0 45px 0;
+      }
+    }
+  }
+  .color-container {
+    background: $bg-color;
+    margin: 35px 0;
+    padding: 10px 0 5px;
+  }
+  input[type="radio"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin: 0 21px 0 12px;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: white;
+    box-shadow:
+    0 0 0 10px white,
+    0 0 0 12px $border-color;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    display: none;
+  }
+  input[type="radio"]:checked + label:before {
+    background: #d22856;
+    box-shadow:
+    0 0 0 10px white,
+    0 0 0 12px $border-color;
+  }
+  input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 20px 0 0px;
+    vertical-align: middle;
+    border-radius: 2px;
+    background: white;
+    border: 2px solid $border-color;
+  }
+  input[type="checkbox"]:checked + label:before {
+    background: url('../img/checkbox-checked.png') no-repeat 50% 50%;
+  }
+  .travelers {
+    background: $bg-color;
+    padding: 40px 0  15px 0;
+    margin: 0 0 40px 0;
+    &-table {
+      width: 100%;
+      border-collapse: collapse;
+      padding: 0 0 0 0;
+      margin: 50px 0 25px 0;
+      border-top: 2px solid $border-color;
+      &__tr {
+        display: flex;
+        justify-content: stretch;
+        margin: 20px 0 0 0;
+      }
+
+
+      &__num {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 63px;
+        height: 63px;
+        border: 2px solid $border-color;
+        box-sizing: border-box;
+        margin-right: -4px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .photos{
+    background: $bg-color;
+    margin: 0;
+    padding: 0;
+  }
+  .button {
+    display: block;
+    width:276px;
+    height: 60px;
+    border: 2px solid $border-color;
+    background: white;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    color: $dark-blue;
+    &--green {
+      background: #2aab6d;
+      border: 2px solid #3bb278;
+      border-radius: 2px;
+      color: white;
+      margin: 50px 0 40px;
+    }
+  }
+  .text-pink {
+    color: $pink;
+  }
+
+  .main-footer {
+
+  }
+  .pink-logo {
+    display: block;
+    margin: 40px auto;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
+      display: block;
+      width: 45px;
+      height: 45px;
+      border: 2px solid #e9ebec;
+      border-radius: 50%;
+      margin: 0 6px;
+      &--tweeter {
+        background: url('../img/social-tweeter.png') no-repeat 50% 50%;
+      }
+      &--facebook {
+        background: url('../img/social-facebook.png') no-repeat 50% 50%;
+      }
+      &--youtube {
+        background: url('../img/social-youtube.png') no-repeat 55% 50%;
+      }
+    }
+  }
+  .developer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 45px;
+    &__text {
+      font-size: 14px;
+      color: $dark-blue;
+    }
+    &__logo {
+      display: block;
+      margin-left: 15px;
+    }
+  }
+  .main-footer {
+    width: $width;
   }

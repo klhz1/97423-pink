@@ -20,11 +20,11 @@
             </li>
             <li class="navigation__menu-item"><a href="#">Информация</a>
             </li>
-            <li class="navigation__menu-item"><a href="#">Блог</a>
+            <li class="navigation__menu-item"><a href="blog.html">Блог</a>
             </li>
-            <li class="navigation__menu-item"><a href="#">Отзывы</a>
+            <li class="navigation__menu-item"><a href="post.html">Отзывы</a>
             </li>
-            <li class="navigation__menu-item"><a href="#">Конкурс</a>
+            <li class="navigation__menu-item"><a href="form.html">Конкурс</a>
             </li>
           </ul>
         </div>
@@ -98,22 +98,7 @@
       </div>
     </div>
   </main>
-  <script>
-    var menuOpen = document.querySelector(".navigation__menu-open");
-    var menu = document.querySelector(".navigation__menu");
-    var menuClose = document.querySelector(".navigation__menu-close");
-
-    menuOpen.addEventListener("click", function (event) {
-      event.preventDefault();
-      menu.classList.add("navigation__menu--show");
-    });
-
-
-    menuClose.addEventListener("click", function (event) {
-      event.preventDefault();
-      menu.classList.remove("navigation__menu--show");
-    });
-  </script>
+  <script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
