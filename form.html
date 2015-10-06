@@ -33,10 +33,11 @@
     </header>
 
     <main>
-      <div class="main-container">
+      <div class="container">
         <p class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
 
         <form method="post" class="form">
+      <div class="main-container">
           <label class="form__field-label" for="name">Имя:*
           </label>
           <input class="form__field" type="text" name="name" id="name" value="Введите ваше имя" required>
@@ -46,8 +47,8 @@
           <label class="form__field-label" for="patronim">Отчество:*
           </label>
           <input class="form__field" type="text" name="patronim" id="patronim" value="Ну и отчество тоже" required>
-
-          <div class="color-container">
+        </div>
+      <div class="main-container--gray">
             <h2 class="form__title">С каким приложением путешествовали?*</h2>
             <ul class="form__list">
               <li class="form__list-item">
@@ -64,6 +65,7 @@
               </li>
             </ul>
           </div>
+      <div class="main-container">
           <h2 class="form__title">Когда вы путешествовали? *</h2>
           <input class="form__field" type="date" name="date" id="date" value="1 апреля 2015" required>
           <label class="form__title" for="date">дата выезда
@@ -74,7 +76,8 @@
           <input class="form__field" type="date" name="date3" id="date3" value="1 апреля 2015" disabled>
           <label class="form__title" for="date3">Дата Возвращения
           </label>
-
+</div>
+      <div class="main-container--gray">
           <section class="travelers">
             <label class="form__title" for="trav-num">Количество попутчиков *
             </label>
@@ -114,16 +117,13 @@
                   <label class="form__field-label" for="nick2">ПРОЗВИЩЕ:</label>
 
                   <input class="form__field" type="text" name="name" id="nick2" value="Ну как же без этого!">
-
                 </td>
               </tr>
-
-
-
             </table>
           </section>
+</div>
 
-
+      <div class="main-container">
           <div class="achievments">
             <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
             <ul class="form__list">
@@ -159,12 +159,17 @@
               </li>
             </ul>
           </div>
+          </div>
+      <div class="main-container--gray">
           <section class="photos">
             <h2 class="form__title">ВАШИ ФОТОГРАФИИ из поездки *</h2>
-            <input class="button button--white" type="file" name="img" required>
+            <input class="button button" type="file" name="img" required>
           </section>
+          </div>
+        <div class="main-container">
           <input class="button button--green" type="submit" value="Отправить форму">
           <p class="form__title form__title--blue"><span class="text-pink">*</span> — обязательные поля</p>
+          </div>
         </form>
       </div>
     </main>
