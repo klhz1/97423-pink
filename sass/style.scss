@@ -1,104 +1,38 @@
 @import 'variables';
 
-
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: lighter;
+  width: 320px;
 }
-a { color:white;
-  text-decoration: none}
+a {
+  color:white;
+  text-decoration: none
+}
+
+/*
+@media (min-width: 700px) {
+  .container {
+    width: 700px;
+  }
+  .navigation {
+    width: 700px;
+    height: 110px;
+  }
+  .page-title {
+    font-size: 40px;
+  }
+}*/
+
 
   .container {
-    width: $width;
   }
+
   .main-header {
     background: url("../img/header-bg.jpg") no-repeat left top;
     position: relative;
   }
-  .main-container {
-    width: $width;
-    padding: 30px 20px;
-    box-sizing: border-box;
-    border: 1px solid black;
 
-    &--gray {
-    padding: 30px 20px;
-      background: $bg-color;
-    }
-  }
-
-  .navigation {
-    display: block;
-    width: $width;
-    height: 65px;
-    background-color: rgba(0,0,0,.3);
-    position: relative;
-
-    &__logo {
-      display: block;
-      width: 115px;
-      height: 65px;
-      font-size: 32px;
-      line-height: 65px;
-      font-weight: 300;
-      padding: 0 20px;
-      text-decoration: none;
-      color: white;
-      z-index: 100;
-      position: relative;
-    }
-
-    &__menu {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      &--show {
-        display: block;
-      }
-
-      &-open {
-        display: block;
-        width:50px;
-        height:24px;
-        background-image: url('../img/menu-open-btn.png');
-        position:absolute;
-        top: 20px;
-        right: 20px;
-
-      }
-      &-close {
-        display: block;
-        width: 23px;
-        height: 23px;
-        background-image: url('../img/menu-close-btn.png');
-        position:absolute;
-        top: 20px;
-        right: 20px;
-      }
-      &-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      &-item {
-        width: $width;
-        height: 64px;
-        color: white;
-        font-size: 18px;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-top: 1px solid #485461;
-        border-bottom: 1px solid #000101;
-        background-color: $dark-blue;
-        text-align: center;
-        text-decoration: none;
-        line-height: 64px;
-        z-index: 100;
-      }
-    }
-  }
   .page-title {
     font-size: 24px;
     color: white;
@@ -110,79 +44,6 @@ a { color:white;
   .intro-img {
     margin: -55px 0 -40px 0;
   }
-  .app-block {
-    background-color: #1d2631;
-    padding: 30px 0;
-    position: relative;
-    z-index: 2;
-    margin-top: 0px;
-    &__download-btn {
-      display: block;
-      width: 275px;
-      height: 50px;
-      border-radius: 30px;
-      border: 3px solid white;
-      font: white;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 50px;
-      text-align: center;
-      margin: auto;
-    }
-    &__platform-logos {
-      display: block;
-      padding: 20px 0;
-      margin: 0 auto;
-
-    }
-    &__text {
-      text-align: center;
-      color: white;
-      font-size: 14px;
-      padding: 0 45px;
-    }
-  }
-  .features {
-    background-color: $bg-color;
-    &__title {
-      font-size: 24px;
-      color: $dark-blue;
-      text-align: center;
-      padding: 40px 40px;
-      background-color: white;
-    }
-    &__item {
-
-      text-align: center;
-      margin: 40px 25px;
-
-      &-title {
-        color: black;
-        font-size: 18px;
-        margin: 0;
-        padding: 0 0 20px 0;
-      }
-      &-text {
-        color: $dark-blue;
-        font-size: 14px;
-        margin: 0 0 40px 0;
-      }
-    }
-  }
-  .review {
-    margin: 50px 0 100px;
-    text-align: center;
-    padding: 0 20px;
-    &__author {
-      font-size: 18px;
-      line-height: 30px;
-      font-weight: bold;
-    }
-    &__text {
-      font-size: 14px;
-      line-height: 30px;
-    }
-  }
 
   .offers-block {
     background: $bg-color;
@@ -190,275 +51,26 @@ a { color:white;
     overflow: hidden;
   }
 
-  .offers-table {
-    table-layout:fixed;
-    width: 833px;
-    margin-left: -256px;
-    border: 2px solid $border-color;
-    border-collapse: collapse;
-    text-transform: uppercase;
-
-
-    &__header {
-      height: 100px;
-      background: $dark-blue;
-      color: white;
-      font-size: 18px;
-      font-weight: bold;
-      line-height: 30px;
-      border: 2px solid $border-color;
-      border-collapse: collapse;
-      &--hit {
-        background: $dark-blue url('../img/hit.png') no-repeat;
-      }
-    }
-
-    &__header-price {
-      display: block;
-      font-weight: normal;
-    }
-
-    &__option {
-      width: 275px;
-      height: 60px;
-      padding: 0 22px;
-      font-size: 14px;
-      border: 2px solid $border-color;
-      border-collapse: collapse;
-      background: white;
-
-      &--red {
-        background: white url('../img/option-red.png') no-repeat 90% 50%;
-      }
-      &--green {
-        background: white url('../img/option-green.png') no-repeat 90% 50%;
-      }
-    }
-  }
-  .contacts {
-    text-align: center;
-
-    &__title {
-      font-size: 24px;
-      color: $dark-blue;
-      padding: 40px 40px;
-      background-color: white;
-    }
-
-    &__text{
-      padding: 0 40px;
-      font-size: 18px;
-      line-height: 18px;
-      font-weight: bold;
-      &--red{
-        font-size: 24px;
-        line-height: 24px;
-        font-weight: lighter;
-        color: $pink;
-      }
-    }
-  }
-
-  .form{
-    &__header {
-      font-size:14px;
-      line-height: 30px;
-      text-align: center;
-      padding: 20px 20px 0;
-      color: $dark-blue;
-    }
-
-    &__field {
-      display: block;
-      width: 100%;
-      height: 63px;
-      font-size: 18px;
-      line-height: 30px;
-      color: $dark-blue;
-      border: 2px solid $border-color;
-      border-radius: 2px;
-      padding: 0 20px;
-      margin: auto;
-      margin-bottom: 10px;
-      box-sizing: border-box;
-      &-label {
-        display: block;
-        color: $pink;
-        text-transform: uppercase;
-        font-size: 14px;
-        line-height: 30px;
-        color: $pink;
-        padding: 5px 0 5px 20px;
-      }
-    }
-    &__title {
-      display: block;
-      color: $pink;
-      text-transform: uppercase;
-      font-size: 14px;
-      line-height: 18px;
-      color: $pink;
-      padding: 0px 10px 20px;
-      text-align: center;
-      font-weight: 400;
-      &--blue {
-        color: $dark-blue;
-      }
-    }
-    &__list {
-      list-style: none;
-      padding: 5px 0 0;
-      margin: 0;
-
-      &-item {
-        font-size: 18px;
-        line-height: 30px;
-        padding: 21px 0;
-      }
-    }
-  }
-
-  input[type="radio"] + label:before {
-    content: "";
-    display: inline-block;
-    width: 15px;
-    height: 15px;
-    margin: 0 21px 0 12px;
-    vertical-align: middle;
-    border-radius: 50%;
-    background: white;
-    box-shadow:
-    0 0 0 10px white,
-    0 0 0 12px $border-color;
-  }
-  input[type="radio"], input[type="checkbox"] {
-    display: none;
-  }
-  input[type="radio"]:checked + label:before {
-    background: #d22856;
-    box-shadow:
-    0 0 0 10px white,
-    0 0 0 12px $border-color;
-  }
-  input[type="checkbox"] + label:before {
-    content: "";
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    margin: 0 20px 0 0px;
-    vertical-align: middle;
-    border-radius: 2px;
-    background: white;
-    border: 2px solid $border-color;
-  }
-  input[type="checkbox"]:checked + label:before {
-    background: url('../img/checkbox-checked.png') no-repeat 50% 50%;
-  }
-  .travelers {
-    background: $bg-color;
-    /*padding: 40px 0  15px 0;
-    margin: 0 0 40px 0;*/
-    &-table {
-      width: 100%;
-      border-collapse: collapse;
-      padding: 0 0 0 0;
-      margin: 50px 0 0 0;
-      border-top: 2px solid $border-color;
-      &__tr {
-        display: flex;
-        justify-content: stretch;
-        margin: 20px 0 0 0;
-      }
-
-
-      &__num {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 63px;
-        height: 63px;
-        border: 2px solid $border-color;
-        box-sizing: border-box;
-        margin-right: -4px;
-        font-size: 18px;
-      }
-    }
-  }
-
-  .photos{
-    background: $bg-color;
-    margin: 0;
-    padding: 0;
-  }
-  .button {
-    display: block;
-    width:276px;
-    height: 60px;
-    border: 2px solid $border-color;
-    background: white;
-    font-size: 18px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 60px;
-    cursor: pointer;
-    color: $dark-blue;
-    &--green {
-      background: #2aab6d;
-      border: 2px solid #3bb278;
-      border-radius: 2px;
-      color: white;
-      margin: 50px 0 40px;
-    }
-  }
   .text-pink {
     color: $pink;
   }
 
-  .main-footer {
-
-  }
   .pink-logo {
     display: block;
     margin: 40px auto;
   }
 
-  .social-links {
-    display: flex;
-    justify-content: center;
 
-    &__btn {
-      display: block;
-      width: 45px;
-      height: 45px;
-      border: 2px solid #e9ebec;
-      border-radius: 50%;
-      margin: 0 6px;
-      &--tweeter {
-        background: url('../img/social-tweeter.png') no-repeat 50% 50%;
-      }
-      &--facebook {
-        background: url('../img/social-facebook.png') no-repeat 50% 50%;
-      }
-      &--youtube {
-        background: url('../img/social-youtube.png') no-repeat 55% 50%;
-      }
-    }
-  }
-  .developer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0 45px;
-    &__text {
-      font-size: 14px;
-      color: $dark-blue;
-    }
-    &__logo {
-      display: block;
-      margin-left: 15px;
-    }
-  }
-  .main-footer {
-    width: $width;
-  }
+
+@import "navigation/navigation";
+@import "app-block/app-block";
+@import "features/features";
+@import "review/review";
+@import "offers-table/offers-table";
+@import "contacts/contacts";
+@import "form/form";
+@import "travelers/travelers";
+@import "button/button";
+@import "developer/developer";
+@import "social-links/social-links";
+@import "main-container/main-container";

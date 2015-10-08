@@ -1,0 +1,21 @@
+.button {
+  display: block;
+  width:276px;
+  height: 60px;
+  border: 2px solid $border-color;
+  background: white;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 60px;
+  cursor: pointer;
+  color: $dark-blue;
+  &--green {
+    background: #2aab6d;
+    border: 2px solid #3bb278;
+    border-radius: 2px;
+    color: white;
+    margin: 50px 0 40px;
+  }
+}

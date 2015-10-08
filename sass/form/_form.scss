@@ -1,0 +1,95 @@
+.form{
+  &__header {
+    font-size:14px;
+    line-height: 30px;
+    text-align: center;
+    padding: 20px 20px 0;
+    color: $dark-blue;
+  }
+
+  &__field {
+    display: block;
+    width: 100%;
+    height: 63px;
+    font-size: 18px;
+    line-height: 30px;
+    color: $dark-blue;
+    border: 2px solid $border-color;
+    border-radius: 2px;
+    padding: 0 20px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    &-label {
+      display: block;
+      color: $pink;
+      text-transform: uppercase;
+      font-size: 14px;
+      line-height: 30px;
+      color: $pink;
+      padding: 5px 0 5px 20px;
+    }
+  }
+  &__title {
+    display: block;
+    color: $pink;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: $pink;
+    padding: 0px 10px 20px;
+    text-align: center;
+    font-weight: 400;
+    &--blue {
+      color: $dark-blue;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 5px 0 0;
+    margin: 0;
+
+    &-item {
+      font-size: 18px;
+      line-height: 30px;
+      padding: 21px 0;
+    }
+  }
+}
+
+.form__radio[type="radio"] + .form__list-label:before {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 21px 0 12px;
+  vertical-align: middle;
+  border-radius: 50%;
+  background: white;
+  box-shadow:
+  0 0 0 10px white,
+  0 0 0 12px $border-color;
+}
+.form__radio[type="radio"], .form__checkbox[type="checkbox"] {
+  display: none;
+}
+.form__radio[type="radio"]:checked + .form__list-label:before {
+  background: #d22856;
+  box-shadow:
+  0 0 0 10px white,
+  0 0 0 12px $border-color;
+}
+.form__checkbox[type="checkbox"] + .form__list-label:before {
+  content: "";
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin: 0 20px 0 0px;
+  vertical-align: middle;
+  border-radius: 2px;
+  background: white;
+  border: 2px solid $border-color;
+}
+.form__checkbox[type="checkbox"]:checked + .form__list-label:before {
+  background: url('../sass/form/checkbox-checked.png') no-repeat 50% 50%;
+}
