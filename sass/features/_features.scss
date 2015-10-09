@@ -1,0 +1,27 @@
+.features {
+  background-color: $bg-color;
+  &__title {
+    font-size: 24px;
+    color: $dark-blue;
+    text-align: center;
+    padding: 40px 40px;
+    background-color: white;
+  }
+  &__item {
+
+    text-align: center;
+    margin: 40px 25px;
+
+    &-title {
+      color: black;
+      font-size: 18px;
+      margin: 0;
+      padding: 0 0 20px 0;
+    }
+    &-text {
+      color: $dark-blue;
+      font-size: 14px;
+      margin: 0 0 40px 0;
+    }
+  }
+}

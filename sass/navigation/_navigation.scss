@@ -1,0 +1,71 @@
+.navigation {
+  display: block;
+  height: 65px;
+  background-color: rgba(0,0,0,.3);
+  position: relative;
+
+  &__logo {
+    display: block;
+    width: 115px;
+    height: 65px;
+    font-size: 32px;
+    line-height: 65px;
+    font-weight: 300;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+    z-index: 100;
+    position: relative;
+  }
+
+  &__menu {
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    &--show {
+      display: block;
+    }
+
+    &-open {
+      display: block;
+      width:50px;
+      height:24px;
+      background-image: url('../sass/navigation/menu-open-btn.png');
+      position:absolute;
+      top: 20px;
+      right: 20px;
+
+    }
+    &-close {
+      display: block;
+      width: 23px;
+      height: 23px;
+      background-image: url('../sass/navigation/menu-close-btn.png');
+      position:absolute;
+      top: 20px;
+      right: 20px;
+    }
+    &-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &-item {
+      height: 64px;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      border-top: 1px solid #485461;
+      border-bottom: 1px solid #000101;
+      background-color: $dark-blue;
+      text-align: center;
+      text-decoration: none;
+      line-height: 64px;
+      z-index: 100;
+    }
+  }
+}

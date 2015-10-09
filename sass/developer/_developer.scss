@@ -1,0 +1,14 @@
+.developer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 45px;
+  &__text {
+    font-size: 14px;
+    color: $dark-blue;
+  }
+  &__logo {
+    display: block;
+    margin-left: 15px;
+  }
+}

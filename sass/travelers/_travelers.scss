@@ -1,0 +1,30 @@
+.travelers {
+  background: $bg-color;
+/*padding: 40px 0  15px 0;
+margin: 0 0 40px 0;*/
+&-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 0 0 0;
+  margin: 50px 0 0 0;
+  border-top: 2px solid $border-color;
+  &__tr {
+    display: flex;
+    justify-content: stretch;
+    margin: 20px 0 0 0;
+  }
+
+
+  &__num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 63px;
+    border: 2px solid $border-color;
+    box-sizing: border-box;
+    margin-right: -4px;
+    font-size: 18px;
+  }
+}
+}
