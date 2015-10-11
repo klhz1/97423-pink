@@ -1,6 +1,6 @@
 .navigation {
   display: block;
-  height: 65px;
+  /*height: 65px;*/
   background-color: rgba(0,0,0,.3);
   position: relative;
 
@@ -18,7 +18,7 @@
     position: relative;
   }
 
-  &__menu {
+  &__menu{
     width: 100%;
     display: none;
     position: absolute;
