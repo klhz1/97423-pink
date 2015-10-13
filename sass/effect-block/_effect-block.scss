@@ -1,0 +1,27 @@
+.effect-block {
+  display: none;
+  background: white;
+  &__img {
+    float: left;
+    padding: 60px 40px 40px 0;
+  }
+  &__text {
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 30px 0 0;
+  }
+  &__title {
+    text-align: left;
+    font-size: 30px;
+    line-height: 35px;
+    list-style: 36px;
+    padding: 95px 0 10px;
+    margin: 0;
+  }
+}
+.effect-block:after {
+  content: '';
+  display: table;
+  clear: both;
+}
