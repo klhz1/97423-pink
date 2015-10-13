@@ -1,14 +1,21 @@
 .review {
+  color: $dark-blue;
   margin: 50px 0 100px;
   text-align: center;
   padding: 0 20px;
   &__author {
+    color: black;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
   }
-  &__text {
+  &__author-info {
+    display: none;
     font-size: 14px;
     line-height: 30px;
+    font-weight: 300;
+  }
+  &__text {
+    font-size: 14px;
   }
 }

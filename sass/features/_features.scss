@@ -1,5 +1,4 @@
 .features {
-  background-color: $bg-color;
   &__title {
     font-size: 24px;
     color: $dark-blue;
@@ -8,7 +7,7 @@
     background-color: white;
   }
   &__item {
-
+    display: block;
     text-align: center;
     margin: 40px 25px;
 

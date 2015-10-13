@@ -1,5 +1,4 @@
 .offers-table {
-  table-layout:fixed;
   width: 833px;
   margin-left: -256px;
   border: 2px solid $border-color;
@@ -24,9 +23,10 @@
   &__header-price {
     display: block;
     font-weight: normal;
+    font-size: 24px;
   }
 
-  &__option {
+  &__cell {
     width: 275px;
     height: 60px;
     padding: 0 22px;
@@ -34,12 +34,20 @@
     border: 2px solid $border-color;
     border-collapse: collapse;
     background: white;
+  }
+  &__cell--hidden {
+    display: none;
+  }
+  &__cell--cross {
+    background: white url('../sass/offers-table/option-red.png') no-repeat 90% 50%;
+  }
+  &__cell--check {
+    background: white url('../sass/offers-table/option-green.png') no-repeat 90% 50%;
+  }
+  &__empty {
+    visibility: hidden;
+  }
+  &__cell-text {
 
-    &--red {
-      background: white url('../sass/offers-table/option-red.png') no-repeat 90% 50%;
-    }
-    &--green {
-      background: white url('../sass/offers-table/option-green.png') no-repeat 90% 50%;
-    }
   }
 }
