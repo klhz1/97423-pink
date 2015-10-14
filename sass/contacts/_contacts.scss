@@ -1,0 +1,23 @@
+.contacts {
+  text-align: center;
+
+  &__title {
+    font-size: 24px;
+    color: $dark-blue;
+    padding: 40px 40px;
+    background-color: white;
+  }
+
+  &__text{
+    padding: 0 40px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: bold;
+    &--red{
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: lighter;
+      color: $pink;
+    }
+  }
+}

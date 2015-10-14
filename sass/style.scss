@@ -1,0 +1,76 @@
+@import 'variables';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  width: 320px;
+}
+a {
+  color:white;
+  text-decoration: none
+}
+
+/*
+@media (min-width: 700px) {
+  .container {
+    width: 700px;
+  }
+  .navigation {
+    width: 700px;
+    height: 110px;
+  }
+  .page-title {
+    font-size: 40px;
+  }
+}*/
+
+
+  .container {
+  }
+
+  .main-header {
+    background: url("../img/header-bg.jpg") no-repeat left top;
+    position: relative;
+  }
+
+  .page-title {
+    font-size: 24px;
+    color: white;
+    margin: 25px 40px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-weight: lighter;
+  }
+  .intro-img {
+    margin: -55px 0 -40px 0;
+  }
+
+  .offers-block {
+    background: $bg-color;
+    padding: 90px 0 100px;
+    overflow: hidden;
+  }
+
+  .text-pink {
+    color: $pink;
+  }
+
+  .pink-logo {
+    display: block;
+    margin: 40px auto;
+  }
+
+
+
+@import "navigation/navigation";
+@import "app-block/app-block";
+@import "features/features";
+@import "review/review";
+@import "offers-table/offers-table";
+@import "contacts/contacts";
+@import "form/form";
+@import "travelers/travelers";
+@import "button/button";
+@import "developer/developer";
+@import "social-links/social-links";
+@import "main-container/main-container";

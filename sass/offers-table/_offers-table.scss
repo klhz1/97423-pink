@@ -1,0 +1,45 @@
+.offers-table {
+  table-layout:fixed;
+  width: 833px;
+  margin-left: -256px;
+  border: 2px solid $border-color;
+  border-collapse: collapse;
+  text-transform: uppercase;
+
+
+  &__header {
+    height: 100px;
+    background: $dark-blue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 30px;
+    border: 2px solid $border-color;
+    border-collapse: collapse;
+    &--hit {
+      background: $dark-blue url('../sass/offers-table/hit.png') no-repeat;
+    }
+  }
+
+  &__header-price {
+    display: block;
+    font-weight: normal;
+  }
+
+  &__option {
+    width: 275px;
+    height: 60px;
+    padding: 0 22px;
+    font-size: 14px;
+    border: 2px solid $border-color;
+    border-collapse: collapse;
+    background: white;
+
+    &--red {
+      background: white url('../sass/offers-table/option-red.png') no-repeat 90% 50%;
+    }
+    &--green {
+      background: white url('../sass/offers-table/option-green.png') no-repeat 90% 50%;
+    }
+  }
+}

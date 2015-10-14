@@ -1,0 +1,11 @@
+.main-container {
+  width: $width;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 1px solid black;
+
+  &--gray {
+    padding: 30px 20px;
+    background: $bg-color;
+  }
+}
