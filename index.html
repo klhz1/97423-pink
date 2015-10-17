@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <nav class="navigation">
-      <a class="navigation__logo" href="#">PINK</a>
+      <a class="navigation__logo" href="#"></a>
       <a class="navigation__menu-open" href="#"></a>
       <div class="navigation__menu">
 
@@ -32,62 +32,90 @@
     <div class="intro-img"></div>
     <div class="app-block">
       <a class="app-block__download-btn" href="#" class="download-app">Скачать приложение</a>
-      <img class="app-block__platform-logos" src="img/platform-logos.png" width="205" height="57" alt="">
+      <div class="app-block__platform-logos-cont">
+        <img src="sass/app-block/apple-logo.svg" alt="" class="app-block__platform-logos">
+        <img src="sass/app-block/android-logo.svg" alt="" class="app-block__platform-logos">
+        <img src="sass/app-block/microsoft-logo.svg" alt="" class="app-block__platform-logos">
+      </div>
       <p class="app-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
     </div>
   </header>
   <main>
 
     <div class="features">
-      <div class="features__title">
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
+      <div class="features__title-cont">
+        <p class="features__title">Устали от серости мегаполиса?</p>
+        <p class="features__title">Нам есть, что вам <br> предложить!</p>
       </div>
       <div class="main-container--gray">
-        <div class="features__container">
-          <div class="features__item">
-            <h2 class="features__item-title">Поднимает настроение</h2>
-            <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__item-title">Меняет мир вокруг</h2>
-            <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </div>
-          <div class="features__item">
-            <h2 class="features__item-title">Заводит новых друзей</h2>
-            <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-            <img class="iphone-img" src="img/iphone-screen.png" width="157" height="280" alt="">
+        <svg class="triangle-white" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
+        <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+      </svg>
+      <div class="features__container">
+
+        <div class="features__item">
+          <h2 class="features__item-title">Поднимает настроение</h2>
+          <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__item-title">Меняет мир вокруг</h2>
+          <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </div>
+        <div class="features__item">
+          <h2 class="features__item-title">Заводит новых друзей</h2>
+          <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+        </div>
+        <picture>
+          <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-3@1x.png">
+            <source media="(min-width:700px)" srcset="img/iphone-screen-tablet-3@1x.png">
+              <source media="(min-width:320px)" srcset="img/screen-mobile-3.png">
+                <img class="features__iphone-screen" src="img/screen-mobile-3.png" alt="" class="features__iphone-screen">
+              </picture>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="main-container">
-      <div class="effect-block">
-        <img class="effect-block__img" src="img/effect24.png" width="262" height="302" alt="">
-        <h2 class="effect-block__title">Эффект<br> на 24 часа!
-        </h2>
-        <p class="effect-block__text">Британские ученые провели исследования
-          и доказали, что положительный эффект
-          от использования приложения длится
-          целые сутки!</p>
-          <a class="effect-block__">****</a>
-        </div>
+        <div class="main-container">
+          <div class="effect-block">
+            <img class="effect-block__img" src="img/effect24.png" width="262" height="302" alt="">
+            <h2 class="effect-block__title">Эффект<br> на 24 часа!
+            </h2>
+            <p class="effect-block__text">Британские ученые провели исследования
+              и доказали, что положительный эффект
+              от использования приложения длится
+              целые сутки!</p>
+              <a href="" class="effect-block__link">Узнать больше об исследовании</a>
+            </div>
 
 
-        <div class="review">
-          <div class="review__author">Николай Петров
-            <p class="review__author-info">25 лет, водитель трамвая</p>
+            <div class="review">
+              <div class="review__author">Николай Петров
+                <p class="review__author-info">25 лет, водитель трамвая</p>
+              </div>
+              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              <div class="review__link-cont">
+                <a class="review__link review__link--current"></a>
+                <a class="review__link"></a>
+                <a class="review__link"></a>
+              </div>
+            </div>
           </div>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
-      </div>
-      <div class="main-container--gray">
+        <div class="main-container--gray">
+          <svg class="triangle-white" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
+          <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
+        </svg>
         <div class="offers-block">
           <table class="offers-table">
             <tr class="offers-table__row">
               <th class="offers-table__empty  offers-table__cell--hidden"></th>
               <th class="offers-table__header">База<span class="offers-table__header-price">3,99 USD</span></th>
-              <th class="offers-table__header offers-table__header--hit">Стандарт<span class="offers-table__header-price">3,99 USD</span></th>
+              <th class="offers-table__header">Стандарт<span class="offers-table__header-price">3,99 USD</span>
+                <div class="offers-table__header-hit">
+                  хит
+                </div>
+              </th>
               <th class="offers-table__header">Анлим<span class="offers-table__header-price">3,99 USD</span></th>
             </tr>
             <tr class="offers-table__row">
@@ -109,6 +137,11 @@
               <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Комментарии</span></td>
             </tr>
           </table>
+          <div class="offers-table__link-cont">
+            <a class="offers-table__link"></a>
+            <a class="offers-table__link offers-table__link--current"></a>
+            <a class="offers-table__link"></a>
+          </div>
         </div>
       </div>
       <div class="contacts">
@@ -120,22 +153,26 @@
       </div>
     </div>
     <div class="map">
-      <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7586693335606!2d30.318841623232842!3d59.93614659377484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjEiTiAzMMKwMTknMTUuNSJF!5e0!3m2!1sru!2sse!4v1444683482417" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-  </main>
-  <footer class="main-footer main-footer-hidden">
-    <img class="main-footer__pink-logo" src="img/glasses.png" width="145" height="40" alt="">
-    <div class="main-footer__social-links">
-      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--tweeter"></a>
-      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--facebook"></a>
-      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--youtube"></a>
-    </div>
-    <div class="main-footer__developer">
-      <p class="main-footer__developer-text">Разработано</p>
-      <img class="main-footer__developer-logo" src="img/htmlacad-logo.png" width="27" height="34" alt="">
-    </div>
-  </footer>
-  <script src="js/script.js" type="text/javascript"></script>
+      <svg class="triangle-white-footer" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
+      <polygon fill="#FFFFFF" points="297.64,61.905 0,0 595.28,0 "/>
+    </svg>
+    <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7586693335606!2d30.318841623232842!3d59.93614659377484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjEiTiAzMMKwMTknMTUuNSJF!5e0!3m2!1sru!2sse!4v1444683482417" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
+</main>
+<footer class="main-footer main-footer-hidden">
+  <img class="main-footer__pink-logo" src="img/glasses.png" width="145" height="40" alt="">
+  <div class="main-footer__social-links">
+    <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--twitter"></a>
+    <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--facebook"></a>
+    <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--youtube"></a>
+  </div>
+  <div class="main-footer__developer">
+    <p class="main-footer__developer-text">Разработано</p>
+    <img class="main-footer__developer-logo" src="img/htmlacad-logo.png" width="27" height="34" alt="">
+  </div>
+</footer>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

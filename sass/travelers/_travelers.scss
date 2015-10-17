@@ -1,7 +1,8 @@
 .travelers {
   background: $bg-color;
-  /*padding: 40px 0  15px 0;
-  margin: 0 0 40px 0;*/
+  &__field-cont {
+    text-align: center;
+  }
   &-table {
     width: 100%;
     border-collapse: collapse;
@@ -11,9 +12,9 @@
     &__tr {
       display: flex;
       justify-content: stretch;
+      align-items: flex-start;
       margin: 20px 0 0 0;
     }
-
 
     &__num {
       display: flex;

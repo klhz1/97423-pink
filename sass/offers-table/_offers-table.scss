@@ -1,6 +1,6 @@
 .offers-table {
   width: 833px;
-  margin-left: -256px;
+  margin: 40px 0 40px -256px;
   border: 2px solid $border-color;
   border-collapse: collapse;
   text-transform: uppercase;
@@ -15,8 +15,22 @@
     line-height: 30px;
     border: 2px solid $border-color;
     border-collapse: collapse;
-    &--hit {
-      background: $dark-blue url('../sass/offers-table/hit.png') no-repeat;
+    position: relative;
+    overflow: hidden;
+    &-hit {
+      position: absolute;
+      top: 10px;
+      left: -25px;
+      display: block;
+      width: 100px;
+      height: 30px;
+      background: $pink;
+      color: white;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      transform: rotate(-45deg);
+      /*background: $dark-blue url('../sass/offers-table/hit.png') no-repeat;*/
     }
   }
 
@@ -39,15 +53,29 @@
     display: none;
   }
   &__cell--cross {
-    background: white url('../sass/offers-table/option-red.png') no-repeat 90% 50%;
+    background: white url('../sass/offers-table/no.svg') no-repeat 90% 50%;
   }
   &__cell--check {
-    background: white url('../sass/offers-table/option-green.png') no-repeat 90% 50%;
+    background: white url('../sass/offers-table/yes.svg') no-repeat 90% 50%;
   }
   &__empty {
     visibility: hidden;
   }
-  &__cell-text {
-
+  &__link-cont {
+    text-align: center;
+    margin: 40px 0;
+  }
+  &__link {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0px 20px 0 0;
+  }
+  &__link--current {
+    background-color: transparent;
+    border: 3px solid $dark-blue;
   }
 }

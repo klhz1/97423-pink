@@ -1,10 +1,16 @@
 .features {
-  &__title {
+  &__container {
+    padding-top: 15px;
+  }
+  &__title-cont {
     font-size: 24px;
     color: $dark-blue;
     text-align: center;
-    padding: 40px 40px;
+    padding: 25px 40px;
     background-color: white;
+  }
+  &__title {
+    padding: 10px 0px;
   }
   &__item {
     display: block;
@@ -20,7 +26,11 @@
     &-text {
       color: $dark-blue;
       font-size: 14px;
-      margin: 0 0 40px 0;
+      margin: 0 0 20px 0;
     }
+  }
+  &__iphone-screen {
+    display: block;
+    margin: 0 auto;
   }
 }

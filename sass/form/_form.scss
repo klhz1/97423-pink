@@ -16,6 +16,10 @@
   &__header-hidden-text {
     display: none;
   }
+  &__item {
+    width: 280px;
+    margin: auto;
+  }
   &__fieldset {
     margin: 0;
     padding: 0;
@@ -34,6 +38,32 @@
     margin: auto;
     margin-bottom: 10px;
     box-sizing: border-box;
+
+    &--minus {
+      display: inline-block;
+      width: 63px;
+      vertical-align: middle;
+      line-height: 56px;
+      font-size: 40px;
+      padding: 0;
+      text-align: center;
+      margin-left: -6px;
+    }
+
+    &--duration {
+      display: inline-block;
+      width: 160px;
+      vertical-align: middle;
+      margin-left: -6px;
+    }
+    &--travelers {
+      display: inline-block;
+      width: 160px;
+      vertical-align: middle;
+      margin-left: -6px;
+    }
+    &
+
     &-label {
       display: block;
       color: $pink;
@@ -63,7 +93,7 @@
     font-size: 14px;
     text-align: center;
     font-weight: 400;
-    padding: 0 20px 30px;
+    padding: 0 15px 30px;
   }
   &__list {
     list-style: none;
@@ -121,5 +151,5 @@
   border: 2px solid $border-color;
 }
 .form__checkbox[type="checkbox"]:checked + .form__list-label:before {
-  background: url('../sass/form/checkbox-checked.png') no-repeat 50% 50%;
+  background: url('../sass/form/yes.svg') no-repeat 50% 50%;
 }

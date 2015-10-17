@@ -4,7 +4,7 @@
   position: relative;
   z-index: 2;
   margin-top: 0px;
-  max-width: 320px;
+  min-width: 320px;
   display: block;
   min-height: 210px;
   &__download-btn {
@@ -20,10 +20,15 @@
     text-align: center;
     margin: 0 auto;
   }
-  &__platform-logos {
-    display: block;
+  &__platform-logos-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 205px;
     padding: 20px 0;
     margin: 0 auto;
+  }
+  &__platform-logos {
 
   }
   &__text {

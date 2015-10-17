@@ -9,7 +9,7 @@
 <body>
   <header class="main-header">
     <nav class="navigation">
-      <a class="navigation__logo" href="index.html">PINK</a>
+      <a class="navigation__logo" href="index.html"></a>
       <a class="navigation__menu-open" href="#"></a>
       <div class="navigation__menu">
 
@@ -69,17 +69,19 @@
         <fieldset class="form__fieldset">
           <legend class="form__legend">Когда вы путешествовали? *</legend>
           <div class="form__item">
-            <input class="form__field" type="date" name="date" id="date" value="1 апреля 2015" required>
+            <input class="form__field" type="date" name="date" id="date" value="2015-04-01" required>
             <label class="form__title" for="date">дата выезда
             </label>
           </div>
-          <div class="form__item">
-            <input class="form__field" type="number" name="date2" id="date2" value="10 дней" min="1" step="1" required>
+          <div class="form__item travelers__field-cont">
+            <span class="form__field form__field--minus">-</span>
+            <input class="form__field form__field--duration" type="number" name="date2" id="date2" value="10 дней" min="1" step="1" required>
+            <span class="form__field form__field--minus">+</span>
             <label class="form__title" for="date2">Продолжительность
             </label>
           </div>
           <div class="form__item">
-            <input class="form__field" type="date" name="date3" id="date3" value="1 апреля 2015" disabled>
+            <input class="form__field" type="date" name="date3" id="date3" value="2015-04-01" disabled>
             <label class="form__title" for="date3">Дата Возвращения
             </label>
           </div>
@@ -90,8 +92,11 @@
         <section class="travelers">
           <fieldset class="form__fieldset">
             <legend class="form__legend">Количество попутчиков *</legend>
-            <input class="form__field" type="number" name="name" id="trav-num" value="2 чел" min="0" step="1" required>
-
+            <div class="travelers__field-cont">
+              <span class="form__field form__field--minus">-</span>
+              <input class="form__field form__field--travelers" type="number" name="name" id="trav-num" value="2 чел" min="0" step="1" required>
+              <span class="form__field form__field--minus">+</span>
+            </div>
             <table class="travelers-table">
               <tr class="travelers-table__tr">
                 <td class="travelers-table__td">
@@ -112,7 +117,7 @@
                 </td>
 
                 <td class="travelers-table__td">
-                  <div class="travelers-table__delete">удалить</div>
+                  <a class="travelers-table__delete" href="">удалить</a>
                 </td>
 
               </tr>
@@ -134,7 +139,7 @@
                 </td>
 
                 <td class="travelers-table__td">
-                  <div class="travelers-table__delete">удалить</div>
+                  <a class="travelers-table__delete" href="">удалить</a>
                 </td>
               </tr>
             </table>
@@ -201,7 +206,7 @@
   <footer class="main-footer">
     <img class="main-footer__pink-logo" src="img/glasses.png" width="145" height="40" alt="">
     <div class="main-footer__social-links">
-      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--tweeter"></a>
+      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--twitter"></a>
       <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--facebook"></a>
       <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--youtube"></a>
     </div>

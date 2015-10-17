@@ -1,21 +1,35 @@
 .review {
   color: $dark-blue;
-  margin: 50px 0 100px;
   text-align: center;
-  padding: 0 20px;
+  padding: 45px 0px;
   &__author {
     color: black;
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
+    margin-bottom: 15px;
   }
   &__author-info {
     display: none;
     font-size: 14px;
     line-height: 30px;
-    font-weight: 300;
+    font-weight: 400;
   }
   &__text {
     font-size: 14px;
+    line-height: 30px;
+  }
+  &__link {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #bec2c7;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 30px 20px 0 0;
+  }
+  &__link--current {
+    background-color: transparent;
+    border: 3px solid $dark-blue;
   }
 }
