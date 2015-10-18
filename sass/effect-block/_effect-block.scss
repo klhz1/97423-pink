@@ -32,3 +32,8 @@
   display: table;
   clear: both;
 }
+@media (min-width: 700px) {
+  .effect-block {
+    display: block;
+  }
+}

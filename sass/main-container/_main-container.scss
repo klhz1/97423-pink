@@ -6,3 +6,10 @@
     background: $bg-color;
   }
 }
+
+@media (min-width: 700px) {
+  .main-container {
+    padding: 0 0px;
+
+  }
+}

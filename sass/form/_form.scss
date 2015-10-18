@@ -151,5 +151,57 @@
   border: 2px solid $border-color;
 }
 .form__checkbox[type="checkbox"]:checked + .form__list-label:before {
-  background: url('../sass/form/yes.svg') no-repeat 50% 50%;
+  background: url('../img/yes-pink.svg') no-repeat 50% 50%;
+}
+
+@media (min-width: 700px) {
+  .form{
+    &__header {
+      font-size:18px;
+      padding: 100px 100px 30px;
+      font-weight: 400;
+    }
+    &__header-hidden-text {
+      display: inline;
+    }
+    &__container {
+      padding: 30px 40px;
+    }
+    &__container--gray {
+      background: none;
+    }
+    &__fieldset {
+      border: 2px solid $border-color;
+      padding: 30px 52px;
+    }
+    &__legend {
+      padding: 0 20px;
+    }
+    &__item {
+      width: 240px;
+      display: inline-block;
+      padding: 20px 5px 0px;
+    }
+    &__title {
+      padding: 5px 10px 0;
+      text-align: none;
+    }
+    &__submit-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 40px;
+      margin: 35px 0 70px 0;
+      height: initial;
+    }
+    &__field--travelers {
+      border-top: none;
+      border-bottom: none;
+      width: 130px;
+    }
+    &__field--duration {
+      width: 118px;
+    }
+  }
 }

@@ -1,25 +1,3 @@
-/**********************************************
-
-1. Вопрос! Что нужно будет делать с классами
-в медиа выражениях, раскидать по своим фаилам
-или оставлять в style.scss?
-
-
-
-2. С таблицей не разобрался. Как ее центрировать
-на разрешении 320 - 700?
-
-
-
-3. не знал как в css поменять цвет бургера, крестика
-и остальных svg, поэтому изменил цвет в самом svg файле.
-А как надо было?
-
-
-
-
-**********************************************
-*/
 @import 'variables';
 
 body {
@@ -47,14 +25,8 @@ img {
   }
 }
 
-.container {
-  margin: 0;
-  padding: 30px 20px;
-}
-
 .main-header {
   background: url("../img/background-mobile@1x.jpg") no-repeat 50% top;
-  /*background-size: cover;*/
   position: relative;
 }
 
@@ -65,16 +37,13 @@ img {
   text-align: center;
   font-weight: lighter;
   display: block;
-  /*max-width: 240px;*/
   &--form {
     padding: 0 0 45px;
   }
 }
 .intro-img {
   display: block;
-  /*width: 320px;*/
   height: 286px;
-  /*margin: -55px 0 -40px 0;*/
   background: url("../img/iphone-hand-mobile.png") no-repeat 50%;
 }
 
@@ -87,13 +56,13 @@ img {
   overflow: hidden;
 }
 
-
 .triangle-white {
   height: 30px;
 }
 .triangle-white-footer {
   position: absolute;
   height: 35px;
+  max-width: 95%;
 }
 
 
@@ -119,31 +88,7 @@ img {
     background: url("../img/background-tablet@1x.jpg") no-repeat 50% top;
     width: 700px;
   }
-  .main-container {
-    padding: 0 0px;
 
-  }
-
-  .navigation {
-    width: 700px;
-    height: 110px;
-    &__menu-item:first-child {
-      height: 110px;
-    }
-    &__logo {
-      background: url("../sass/navigation/logotype-white-tablet.svg") no-repeat 0 100%;
-      margin-left: 40px;
-      padding-left: 70px;
-    }
-    &__menu-open {
-      top: 44px;
-      right: 40px;
-    }
-    &__menu-close {
-      top: 45px;
-      right: 40px;
-    }
-  }
   .page-title {
     font-size: 40px;
     margin: 90px 30px 0 70px;
@@ -161,22 +106,7 @@ img {
       font-weight: lighter;
     }
   }
-  .app-block {
-    background-color: transparent;
-    margin: 0 0 0 35px;
-    padding: 30px 0 110px 0;
-    max-width: 320px;
-    &__text {
-      font-size: 18px;
-      padding: 0;
-    }
-    &__platform-logos-cont {
-      padding: 9px 0;
-    }
-    &__platform-logos {
-      padding: 40px 0 20px;
-    }
-  }
+
   .intro-img {
     position: absolute;
     bottom: 0;
@@ -185,227 +115,21 @@ img {
     height: 545px;
     margin: 0;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat top left;
-
-  }
-  .iphone-img {
-    display: none;
-  }
-
-  .features{
-    width: 700px;
-
-    &__container {
-      display: block;
-      padding: 0 40px;
-    }
-    &__iphone-screen {
-      position: relative;
-      top: -45px;
-      margin: 0 0 -45px 0;
-    }
-    &__title-cont {
-      font-size: 40px;
-      line-height: 45px;
-      padding: 55px 40px;
-    }
-    &__title {
-      padding: 0;
-    }
-    &__item {
-      max-width: 300px;
-      text-align: left;
-      float: right;
-      clear: both;
-      margin: 25px 0 0 0;
-      padding: 0;
-    }
-  }
-
-  .effect-block {
-    display: block;
-  }
-
-  .review {
-    margin: 30px 0;
-    display: flex;
-    flex-direction: column;
-    background: white;
-    font-weight: 400;
-    padding: 0;
-    &__text {
-      font-size: 18px;
-      line-height: 30px;
-      order: -1;
-      padding: 0 40px 30px;
-    }
-    &__author {
-      font-size: 20px;
-    }
-    &__author-info {
-      display: block;
-    }
   }
 
   .offers-block {
     padding: 35px 0 70px;
   }
-  .offers-table {
-    margin: 0 40px;
-    width: 620px;
-    &__header {
-      height: 75px;
-      font-size: 16px;
-      &-hit {
-        top: 3px;
-        left: -33px;
-      }
-    }
 
-    &__header-price {
-      font-size: 18px;
-    }
-    &__cell {
-      width: 152px;
-      height: 45px;
-      padding: 0 15px;
-      text-transform: capitalize;
-    }
-    &__cell--hidden {
-      display:  table-cell;
-    }
-    &__cell-text {
-      display: none;
-    }
-    &__cell--cross {
-      background-position: 50% 50%;
-    }
-    &__cell--check {
-      background-position: 50% 50%;
-    }
-    &__link-cont {
-      display: none;
-    }
-  }
-
-  .contacts{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-    &__title {
-      font-size: 40px;
-      display: block;
-      width: 400px;
-    }
-    &__section {
-      display: block;
-      width: 300px;
-      height: 90px;
-    }
-  }
   .map__iframe {
     height: 380px;
   }
-  .main-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 40px;
-    &__ping-logo {
-      margin: 0;
-    }
-    &__social-links {
-      margin: 0;
-    }
-    &__developer {
-      margin: 0;
-    }
-  }
 
-
-  .form{
-    &__header {
-      font-size:18px;
-      padding: 100px 100px 30px;
-      font-weight: 400;
-    }
-    &__header-hidden-text {
-      display: inline;
-    }
-    &__container {
-      padding: 30px 40px;
-    }
-    &__container--gray {
-      background: none;
-    }
-    &__fieldset {
-      border: 2px solid $border-color;
-      padding: 30px 52px;
-    }
-    &__legend {
-      padding: 0 20px;
-    }
-    &__item {
-      width: 240px;
-      display: inline-block;
-      padding: 20px 5px 0px;
-    }
-    &__title {
-      padding: 5px 10px 0;
-      text-align: none;
-    }
-    &__submit-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 40px;
-      margin: 35px 0 70px 0;
-      height: initial;
-    }
-    &__field--travelers {
-      border-top: none;
-      border-bottom: none;
-      width: 130px;
-    }
-    &__field--duration {
-      width: 118px;
-    }
-  }
-
-  .travelers {
-    background: none;
-
-    &-table {
-      &__tr {
-        justify-content: space-between;
-      }
-      &__delete {
-        display: block;
-        width: 55px;
-        color: black;
-        font-size: 14px;
-        text-transform: uppercase;
-        margin: 60px 0 0;
-      }
-    }
-    &-table__num {
-      background: $bg-color;
-    }
-    &__field {
-      width: 300px;
-      &-cont {
-        text-align: left;
-      }
-    }
-  }
   .triangle-white {
     height: 50px;
   }
   .triangle-white-footer {
-    max-width: 700px;
+    max-width: 95%;
     height: 75px;
   }
 

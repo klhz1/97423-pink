@@ -53,10 +53,10 @@
     display: none;
   }
   &__cell--cross {
-    background: white url('../sass/offers-table/no.svg') no-repeat 90% 50%;
+    background: white url('../img/no.svg') no-repeat 90% 50%;
   }
   &__cell--check {
-    background: white url('../sass/offers-table/yes.svg') no-repeat 90% 50%;
+    background: white url('../img/yes.svg') no-repeat 90% 50%;
   }
   &__empty {
     visibility: hidden;
@@ -77,5 +77,75 @@
   &__link--current {
     background-color: transparent;
     border: 3px solid $dark-blue;
+  }
+}
+
+@media (min-width: 400px) {
+  .offers-table {
+    width: inherit;
+    margin: 0px 20px;
+
+    &__header {
+      height: 75px;
+      font-size: 16px;
+      &-hit {
+        top: 3px;
+        left: -33px;
+      }
+    }
+    &__cell--hidden {
+      display:  table-cell;
+    }
+    &__cell-text {
+      display: none;
+    }
+    &__cell--cross {
+      background-position: 50% 50%;
+    }
+    &__cell--check {
+      background-position: 50% 50%;
+    }
+    &__link-cont {
+      display: none;
+    }
+  }
+}
+@media (min-width: 700px) {
+  .offers-table {
+    margin: 0 40px;
+    width: 620px;
+    &__header {
+      height: 75px;
+      font-size: 16px;
+      &-hit {
+        top: 3px;
+        left: -33px;
+      }
+    }
+
+    &__header-price {
+      font-size: 18px;
+    }
+    &__cell {
+      width: 152px;
+      height: 45px;
+      padding: 0 15px;
+      text-transform: capitalize;
+    }
+    &__cell--hidden {
+      display:  table-cell;
+    }
+    &__cell-text {
+      display: none;
+    }
+    &__cell--cross {
+      background-position: 50% 50%;
+    }
+    &__cell--check {
+      background-position: 50% 50%;
+    }
+    &__link-cont {
+      display: none;
+    }
   }
 }

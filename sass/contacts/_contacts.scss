@@ -21,3 +21,22 @@
     }
   }
 }
+@media (min-width: 700px) {
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    &__title {
+      font-size: 40px;
+      display: block;
+      width: 400px;
+    }
+    &__section {
+      display: block;
+      width: 300px;
+      height: 90px;
+    }
+  }
+}

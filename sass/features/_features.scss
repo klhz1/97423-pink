@@ -34,3 +34,34 @@
     margin: 0 auto;
   }
 }
+@media (min-width: 700px) {
+  .features{
+    width: 700px;
+
+    &__container {
+      display: block;
+      padding: 0 40px;
+    }
+    &__iphone-screen {
+      position: relative;
+      top: -45px;
+      margin: 0 0 -45px 0;
+    }
+    &__title-cont {
+      font-size: 40px;
+      line-height: 45px;
+      padding: 55px 40px;
+    }
+    &__title {
+      padding: 0;
+    }
+    &__item {
+      max-width: 300px;
+      text-align: left;
+      float: right;
+      clear: both;
+      margin: 25px 0 0 0;
+      padding: 0;
+    }
+  }
+}

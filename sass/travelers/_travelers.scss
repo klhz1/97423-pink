@@ -46,4 +46,31 @@
     box-sizing: border-box;
   }
 }
+@media (min-width: 700px) {
+  .travelers {
+    background: none;
 
+    &-table {
+      &__tr {
+        justify-content: space-between;
+      }
+      &__delete {
+        display: block;
+        width: 55px;
+        color: black;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin: 60px 0 0;
+      }
+    }
+    &-table__num {
+      background: $bg-color;
+    }
+    &__field {
+      width: 300px;
+      &-cont {
+        text-align: left;
+      }
+    }
+  }
+}
