@@ -8,81 +8,95 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="container">
-      <nav class="navigation">
-        <a class="navigation__logo" href="index.html">PINK</a>
-        <a class="navigation__menu-open" href="#"></a>
-        <div class="navigation__menu">
+    <nav class="navigation">
+      <a class="navigation__logo" href="index.html"></a>
+      <a class="navigation__menu-open" href="#"></a>
+      <div class="navigation__menu">
 
 
-          <ul class="navigation__menu-list">
-            <li class="navigation__menu-item"><a href="#" class="navigation__menu-close"></a>
+        <ul class="navigation__menu-list">
+          <li class="navigation__menu-item"><a href="#" class="navigation__menu-close"></a>
+          </li>
+          <li class="navigation__menu-item"><a href="#">Информация</a>
+          </li>
+          <li class="navigation__menu-item"><a href="blog.html">Блог</a>
+          </li>
+          <li class="navigation__menu-item"><a href="post.html">Отзывы</a>
+          </li>
+          <li class="navigation__menu-item"><a href="form.html">Конкурс</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="page-title page-title--form">Конкурс на самое безбашеное путешествие с Пинк</h1>
+  </header>
+
+  <main>
+    <p class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__header-hidden-text"> Пожалуйста, заполните форму ниже:</span></p>
+
+    <form method="post" class="form">
+      <div class="form__container">
+        <label class="form__field-label" for="name">Имя:*
+        </label>
+        <input class="form__field" type="text" name="name" id="name" value="Введите ваше имя" required>
+        <label class="form__field-label" for="surname">Фамилия:*
+        </label>
+        <input class="form__field" type="text" name="surname" id="surname" value="Укажите фамилию" required>
+        <label class="form__field-label" for="patronim">Отчество:*
+        </label>
+        <input class="form__field" type="text" name="patronim" id="patronim" value="Ну и отчество тоже" required>
+      </div>
+      <div class="form__container form__container--gray">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">С каким приложением путешествовали?*</legend>
+          <ul class="form__list">
+            <li class="form__list-item">
+              <input class="form__radio" type="radio" name="app" id="ios">
+              <label class="form__list-label" for="ios">Pink для iOS</label>
             </li>
-            <li class="navigation__menu-item"><a href="#">Информация</a>
+            <li class="form__list-item">
+              <input class="form__radio" type="radio" name="app" id="android">
+              <label class="form__list-label" for="android">Pink на Android</label>
             </li>
-            <li class="navigation__menu-item"><a href="blog.html">Блог</a>
-            </li>
-            <li class="navigation__menu-item"><a href="post.html">Отзывы</a>
-            </li>
-            <li class="navigation__menu-item"><a href="form.html">Конкурс</a>
+            <li class="form__list-item">
+              <input class="form__radio" type="radio" name="app" id="winphone">
+              <label class="form__list-label" for="winphone">Windows Phone</label>
             </li>
           </ul>
-        </div>
-      </nav>
-      <h1 class="page-title">Конкурс на самое безбашеное путешествие с Пинк</h1>
-    </header>
-
-    <main>
-      <div class="container">
-        <p class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
-
-        <form method="post" class="form">
-      <div class="main-container">
-          <label class="form__field-label" for="name">Имя:*
-          </label>
-          <input class="form__field" type="text" name="name" id="name" value="Введите ваше имя" required>
-          <label class="form__field-label" for="surname">Фамилия:*
-          </label>
-          <input class="form__field" type="text" name="surname" id="surname" value="Укажите фамилию" required>
-          <label class="form__field-label" for="patronim">Отчество:*
-          </label>
-          <input class="form__field" type="text" name="patronim" id="patronim" value="Ну и отчество тоже" required>
-        </div>
-      <div class="main-container--gray">
-            <h2 class="form__title">С каким приложением путешествовали?*</h2>
-            <ul class="form__list">
-              <li class="form__list-item">
-                <input class="form__radio" type="radio" name="app" id="ios">
-                <label class="form__list-label" for="ios">Pink для iOS</label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__radio" type="radio" name="app" id="android">
-                <label class="form__list-label" for="android">Pink на Android</label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__radio" type="radio" name="app" id="winphone">
-                <label class="form__list-label" for="winphone">Windows Phone</label>
-              </li>
-            </ul>
-          </div>
-      <div class="main-container">
-          <h2 class="form__title">Когда вы путешествовали? *</h2>
-          <input class="form__field" type="date" name="date" id="date" value="1 апреля 2015" required>
-          <label class="form__title" for="date">дата выезда
-          </label>
-          <input class="form__field" type="number" name="date2" id="date2" value="10 дней" min="1" step="1" required>
-          <label class="form__title" for="date2">Продолжительность
-          </label>
-          <input class="form__field" type="date" name="date3" id="date3" value="1 апреля 2015" disabled>
-          <label class="form__title" for="date3">Дата Возвращения
-          </label>
-</div>
-      <div class="main-container--gray">
-          <section class="travelers">
-            <label class="form__title" for="trav-num">Количество попутчиков *
+        </fieldset>
+      </div>
+      <div class="form__container">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Когда вы путешествовали? *</legend>
+          <div class="form__item">
+            <input class="form__field" type="date" name="date" id="date" value="2015-04-01" required>
+            <label class="form__title" for="date">дата выезда
             </label>
-            <input class="form__field" type="number" name="name" id="trav-num" value="2 чел" min="0" step="1" required>
+          </div>
+          <div class="form__item travelers__field-cont">
+            <span class="form__field form__field--minus">-</span>
+            <input class="form__field form__field--duration" type="number" name="date2" id="date2" value="10 дней" min="1" step="1" required>
+            <span class="form__field form__field--minus">+</span>
+            <label class="form__title" for="date2">Продолжительность
+            </label>
+          </div>
+          <div class="form__item">
+            <input class="form__field" type="date" name="date3" id="date3" value="2015-04-01" disabled>
+            <label class="form__title" for="date3">Дата Возвращения
+            </label>
+          </div>
+        </fieldset>
+      </div>
+      <div class="form__container form__container--gray">
 
+        <section class="travelers">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">Количество попутчиков *</legend>
+            <div class="travelers__field-cont">
+              <span class="form__field form__field--minus">-</span>
+              <input class="form__field form__field--travelers" type="number" name="name" id="trav-num" value="2 чел" min="0" step="1" required>
+              <span class="form__field form__field--minus">+</span>
+            </div>
             <table class="travelers-table">
               <tr class="travelers-table__tr">
                 <td class="travelers-table__td">
@@ -92,15 +106,20 @@
                 </td>
 
                 <td class="travelers-table__td">
-                  <label class="form__field-label" for="name1">Имя:*</label>
+                  <label class="form__field-label" for="name1">ИМЯ:*</label>
 
-                  <input class="form__field" type="text" name="name" id="name1" value="Введите ваше имя" required>
+                  <input class="travelers__field" type="text" name="name" id="name1" value="Введите ваше имя" required>
 
                   <label class="form__field-label" for="nick1">ПРОЗВИЩЕ:</label>
 
-                  <input class="form__field" type="text" name="name" id="nick1" value="Ну как же без этого!">
+                  <input class="travelers__field" type="text" name="name" id="nick1" value="Ну как же без этого!">
 
                 </td>
+
+                <td class="travelers-table__td">
+                  <a class="travelers-table__delete" href="">удалить</a>
+                </td>
+
               </tr>
               <tr class="travelers-table__tr">
                 <td class="travelers-table__td">
@@ -110,81 +129,91 @@
                 </td>
 
                 <td class="travelers-table__td">
-                  <label class="form__field-label" for="name2">Имя:*</label>
+                  <label class="form__field-label" for="name2">ИМЯ:*</label>
 
-                  <input class="form__field" type="text" name="name" id="name2" value="Введите ваше имя" required>
+                  <input class="travelers__field" type="text" name="name" id="name2" value="Введите ваше имя" required>
 
                   <label class="form__field-label" for="nick2">ПРОЗВИЩЕ:</label>
 
-                  <input class="form__field" type="text" name="name" id="nick2" value="Ну как же без этого!">
+                  <input class="travelers__field" type="text" name="name" id="nick2" value="Ну как же без этого!">
+                </td>
+
+                <td class="travelers-table__td">
+                  <a class="travelers-table__delete" href="">удалить</a>
                 </td>
               </tr>
             </table>
-          </section>
-</div>
+          </fieldset>
+        </section>
 
-      <div class="main-container">
-          <div class="form__container">
-            <h2 class="form__title">Ваши безбашенные достижения в путешествии</h2>
-            <ul class="form__list">
-              <li class="form__list-item">
-                <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-1" checked="checked">
-                <label class="form__list-label" for="checkbox-1">Сделал селфи с акулой
-                </label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-2" checked="checked">
-                <label class="form__list-label" for="checkbox-2">Обгорел на пляже
-                </label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-3">
-                <label class="form__list-label" for="checkbox-3">Видел Чака Норриса
-                </label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-4">
-                <label class="form__list-label" for="checkbox-4">Накупил сувениров
-                </label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-5" checked="checked">
-                <label class="form__list-label" for="checkbox-5">Удержал башню
-                </label>
-              </li>
-              <li class="form__list-item">
-                <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-6">
-                <label class="form__list-label" for="checkbox-6">Разгромил отель
-                </label>
-              </li>
-            </ul>
-          </div>
-          </div>
-      <div class="main-container--gray">
-          <section class="form__container">
-            <h2 class="form__title">ВАШИ ФОТОГРАФИИ из поездки *</h2>
+      </div>
+
+      <div class="form__container">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="form__list">
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-1" checked="checked">
+              <label class="form__list-label" for="checkbox-1">Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-2" checked="checked">
+              <label class="form__list-label" for="checkbox-2">Обгорел на пляже
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-3">
+              <label class="form__list-label" for="checkbox-3">Видел Чака Норриса
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-4">
+              <label class="form__list-label" for="checkbox-4">Накупил сувениров
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-5" checked="checked">
+              <label class="form__list-label" for="checkbox-5">Удержал башню
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-6">
+              <label class="form__list-label" for="checkbox-6">Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+      <div class="form__container form__container--gray">
+        <section class="form__photos">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
             <input class="button button" type="file" name="img" required>
-          </section>
-          </div>
-        <div class="main-container">
-          <input class="button button--green" type="submit" value="Отправить форму">
-          <p class="form__title form__title--blue"><span class="text-pink">*</span> — обязательные поля</p>
-          </div>
-        </form>
+          </fieldset>
+        </section>
       </div>
-    </main>
+      <div class="form__submit-container">
+        <input class="button button--green" type="submit" value="Отправить форму">
 
-    <footer class="main-footer">
-      <img class="pink-logo" src="img/glasses.png" width="145" height="40" alt="">
-      <div class="social-links">
-        <a href="#" class="social-links__btn social-links__btn--tweeter"></a>
-        <a href="#" class="social-links__btn social-links__btn--facebook"></a>
-        <a href="#" class="social-links__btn social-links__btn--youtube"></a>
+        <p class="form__title form__title--blue"><span class="text-pink">*</span> — обязательные поля</p>
+
       </div>
-      <div class="developer">
-        <p class="developer__text">Разработано</p>
-        <img class="developer__logo" src="img/htmlacad-logo.png" width="27" height="34" alt="">
-      </div>
-    </footer>
-    <script src="js/script.js" type="text/javascript"></script>
-  </body>
+    </form>
+
+  </main>
+
+  <footer class="main-footer">
+    <img class="main-footer__pink-logo" src="img/glasses.png" width="145" height="40" alt="">
+    <div class="main-footer__social-links">
+      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--twitter"></a>
+      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--facebook"></a>
+      <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--youtube"></a>
+    </div>
+    <div class="main-footer__developer">
+      <p class="main-footer__developer-text">Разработано</p>
+      <img class="main-footer__developer-logo" src="img/htmlacad-logo.png" width="27" height="34" alt="">
+    </div>
+  </footer>
+  <script src="js/script.js" type="text/javascript"></script>
+</body>

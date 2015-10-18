@@ -1,6 +1,6 @@
 .navigation {
   display: block;
-  height: 65px;
+  /*height: 65px;*/
   background-color: rgba(0,0,0,.3);
   position: relative;
 
@@ -8,22 +8,20 @@
     display: block;
     width: 115px;
     height: 65px;
-    font-size: 32px;
-    line-height: 65px;
-    font-weight: 300;
     padding: 0 20px;
-    text-decoration: none;
-    color: white;
     z-index: 100;
     position: relative;
+    background: url("../img/logotype-white-mobile.svg") no-repeat 0 100%;
+    background-position: center;
   }
 
-  &__menu {
+  &__menu{
     width: 100%;
     display: none;
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
     &--show {
       display: block;
     }
@@ -32,7 +30,8 @@
       display: block;
       width:50px;
       height:24px;
-      background-image: url('../sass/navigation/menu-open-btn.png');
+      background-image: url('../img/menu-burger.svg');
+      background-repeat: no-repeat;
       position:absolute;
       top: 20px;
       right: 20px;
@@ -42,7 +41,7 @@
       display: block;
       width: 23px;
       height: 23px;
-      background-image: url('../sass/navigation/menu-close-btn.png');
+      background-image: url('../img/menu-cross.svg');
       position:absolute;
       top: 20px;
       right: 20px;
@@ -68,4 +67,26 @@
       z-index: 100;
     }
   }
+}
+@media (min-width: 700px) {
+ .navigation {
+  width: 700px;
+  height: 110px;
+  &__menu-item:first-child {
+    height: 110px;
+  }
+  &__logo {
+    background: url("../img/logotype-white-tablet.svg") no-repeat 0 100%;
+    margin-left: 40px;
+    padding-left: 70px;
+  }
+  &__menu-open {
+    top: 44px;
+    right: 40px;
+  }
+  &__menu-close {
+    top: 45px;
+    right: 40px;
+  }
+}
 }
