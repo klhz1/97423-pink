@@ -20,6 +20,9 @@
       color: $pink;
     }
   }
+  &__br {
+    display: none;
+  }
 }
 @media (min-width: 700px) {
   .contacts{

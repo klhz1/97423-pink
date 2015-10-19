@@ -15,34 +15,42 @@
   &__item {
     display: block;
     text-align: center;
-    margin: 40px 25px;
+    margin: 35px 20px;
 
     &-title {
       color: black;
       font-size: 18px;
       margin: 0;
-      padding: 0 0 20px 0;
+      padding: 0 0 10px 0;
     }
     &-text {
       color: $dark-blue;
       font-size: 14px;
+      line-height: 24px;
       margin: 0 0 20px 0;
+      font-weight: 400;
     }
   }
-  &__iphone-screen {
+  &__iphone-screen-3 {
     display: block;
     margin: 0 auto;
+  }
+  &__iphone-screen-1 {
+    display: none;
+  }
+  &__iphone-screen-2 {
+    display: none;
   }
 }
 @media (min-width: 700px) {
   .features{
-    width: 700px;
+    /*width: 700px;*/
 
     &__container {
       display: block;
       padding: 0 40px;
     }
-    &__iphone-screen {
+    &__iphone-screen-3 {
       position: relative;
       top: -45px;
       margin: 0 0 -45px 0;

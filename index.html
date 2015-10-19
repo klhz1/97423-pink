@@ -66,102 +66,148 @@
           <h2 class="features__item-title">Заводит новых друзей</h2>
           <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
         </div>
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-3@1x.png">
-            <source media="(min-width:700px)" srcset="img/iphone-screen-tablet-3@1x.png">
-              <source media="(min-width:320px)" srcset="img/screen-mobile-3.png">
-                <img class="features__iphone-screen" src="img/screen-mobile-3.png" alt="" class="features__iphone-screen">
-              </picture>
+        <div class="features__iphone-cont">
+          <picture>
+            <img class="features__iphone-screen-1" src="img/iphone-screen-desktop-1@1x.png" alt="" class="features__iphone-screen">
+          </picture>
+          <picture>
+            <img class="features__iphone-screen-2" src="img/iphone-screen-desktop-2@1x.png" alt="" class="features__iphone-screen">
+          </picture>
+          <picture>
+            <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-3@1x.png">
+              <source media="(min-width:700px)" srcset="img/iphone-screen-tablet-3@1x.png">
+                <source media="(min-width:320px)" srcset="img/screen-mobile-3.png">
+                  <img class="features__iphone-screen-3" src="img/screen-mobile-3.png" alt="" class="features__iphone-screen">
+                </picture>
+              </div>
             </div>
           </div>
         </div>
         <div class="main-container">
           <div class="effect-block">
-            <img class="effect-block__img" src="img/effect24.png" width="262" height="302" alt="">
-            <h2 class="effect-block__title">Эффект<br> на 24 часа!
-            </h2>
-            <p class="effect-block__text">Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
-              целые сутки!</p>
-              <a href="" class="effect-block__link">Узнать больше об исследовании</a>
-            </div>
+            <picture>
+              <source media="(min-width:1200px)" srcset="img/timer-desktop.png"  width="301" height="346">
+                <img class="effect-block__img" src="img/timer.png" width="262" height="302" alt="">
+              </picture>
+              <h2 class="effect-block__title">Эффект<br class="effect-block__br"> на 24 часа!
+              </h2>
+              <p class="effect-block__text">Британские ученые провели исследования
+                и доказали, что положительный эффект
+                от использования приложения длится
+                целые сутки!</p>
+                <a href="" class="effect-block__link">Узнать больше об исследовании</a>
+              </div>
 
 
-            <div class="review">
+              <div class="review">
+                <svg class="review__quotes" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="78.673px" height="63.788px" viewBox="0 0 78.673 63.788" enable-background="new 0 0 78.673 63.788" xml:space="preserve">
+                <g>
+                  <path fill="#efefef" d="M72.354,39.632c-2.797-2.401-6.636-3.604-11.518-3.604h-5.67c0.473-4.081,1.278-7.397,2.421-9.948
+                  c1.141-2.551,2.854-5.044,5.139-7.477c2.363-2.51,4.685-4.531,6.97-6.063c2.283-1.53,5.274-3.356,8.978-5.477L74.42,0
+                  c-2.441,1.495-5.474,3.42-9.096,5.779c-3.623,2.359-7.048,5.228-10.276,8.607c-3.151,3.302-5.83,7.056-8.033,11.261
+                  c-2.206,4.204-3.308,8.861-3.308,13.97c0,7.232,1.456,13.07,4.371,17.511c2.913,4.44,7.755,6.661,14.529,6.661
+                  c4.33,0,7.737-1.436,10.218-4.311s3.721-5.967,3.721-9.273C76.546,45.559,75.147,42.034,72.354,39.632z"/>
+                  <path fill="#efefef" d="M19.019,18.603c2.362-2.51,4.685-4.531,6.97-6.063c2.283-1.53,5.274-3.356,8.978-5.477L30.713,0
+                  c-2.441,1.495-5.475,3.42-9.095,5.779c-3.624,2.359-7.05,5.228-10.278,8.607c-3.149,3.302-5.828,7.056-8.032,11.261
+                  C1.103,29.851,0,34.508,0,39.616c0,7.232,1.457,13.07,4.371,17.511c2.912,4.44,7.756,6.661,14.529,6.661
+                  c4.33,0,7.737-1.436,10.218-4.311c2.481-2.875,3.722-5.967,3.722-9.273c0-4.646-1.399-8.17-4.194-10.572
+                  c-2.796-2.401-6.635-3.604-11.517-3.604h-5.671c0.473-4.081,1.3-7.416,2.481-10.007C15.12,23.432,16.812,20.958,19.019,18.603z"/>
+                </g>
+              </svg>
+
               <div class="review__author">Николай Петров
                 <p class="review__author-info">25 лет, водитель трамвая</p>
               </div>
-              <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              <div class="review__link-cont">
-                <a class="review__link review__link--current"></a>
-                <a class="review__link"></a>
-                <a class="review__link"></a>
-              </div>
+              <div class="review__arrow-left">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+                <path fill="#bec2c7" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261
+                c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248
+                c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
+              </svg>
             </div>
+            <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            <div class="review__arrow-right">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
+              <path fill="#bec2c7" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012
+              c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248
+              c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
+            </svg>
+          </div>
+          <div class="review__link-cont">
+            <a class="review__link review__link--current"></a>
+            <a class="review__link"></a>
+            <a class="review__link"></a>
           </div>
         </div>
-        <div class="main-container--gray">
-          <svg class="triangle-white" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-          width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
-          <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-        </svg>
-        <div class="offers-block">
-          <table class="offers-table">
-            <tr class="offers-table__row">
-              <th class="offers-table__empty  offers-table__cell--hidden"></th>
-              <th class="offers-table__header">База<span class="offers-table__header-price">3,99 USD</span></th>
-              <th class="offers-table__header">Стандарт<span class="offers-table__header-price">3,99 USD</span>
-                <div class="offers-table__header-hit">
-                  хит
-                </div>
-              </th>
-              <th class="offers-table__header">Анлим<span class="offers-table__header-price">3,99 USD</span></th>
-            </tr>
-            <tr class="offers-table__row">
-              <td class="offers-table__cell offers-table__cell--hidden">Розовый фильтр</td>
-              <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
-              <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
-              <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
-            </tr>
-            <tr class="offers-table__row">
-              <td class="offers-table__cell  offers-table__cell--hidden">Смайлики</td>
-              <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Смайлики</span></td>
-              <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Смайлики</span></td>
-              <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Смайлики</span></td>
-            </tr>
-            <tr class="offers-table__row">
-              <td class="offers-table__cell  offers-table__cell--hidden">Комментарии</td>
-              <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Комментарии</span></td>
-              <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Комментарии</span></td>
-              <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Комментарии</span></td>
-            </tr>
-          </table>
-          <div class="offers-table__link-cont">
-            <a class="offers-table__link"></a>
-            <a class="offers-table__link offers-table__link--current"></a>
-            <a class="offers-table__link"></a>
-          </div>
-        </div>
-      </div>
-      <div class="contacts">
-        <div class="contacts__title">Остались вопросы? Свяжитесь с нами!</div>
-        <div class="contacts__section"><p class="contacts__text contacts__tel">Звоните:<p class="contacts__text contacts__text--red">+7 (812) 555-66-66</p></p></div>
-        <div class="contacts__section"><p class="contacts__text contacts__mail">Пишите:<p class="contacts__text contacts__text--red">mail@htmlacademy.ru</p></p></div>
-        <div class="contacts__section"><p class="contacts__text contacts__addr">Приезжайте в гости:<p class="contacts__text contacts__text--red">ул. Большая Конюшенная, 19/8 </p></p></div>
-
       </div>
     </div>
-    <div class="map">
-      <svg class="triangle-white-footer" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
-      <polygon fill="#FFFFFF" points="297.64,61.905 0,0 595.28,0 "/>
+    <div class="main-container--gray">
+      <svg class="triangle-white" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
+      <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
     </svg>
-    <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7586693335606!2d30.318841623232842!3d59.93614659377484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjEiTiAzMMKwMTknMTUuNSJF!5e0!3m2!1sru!2sse!4v1444683482417" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <div class="offers-block">
+      <table class="offers-table">
+        <tr class="offers-table__row">
+          <th class="offers-table__empty  offers-table__cell--hidden"></th>
+          <th class="offers-table__header">База<span class="offers-table__header-price">3,99 USD</span></th>
+          <th class="offers-table__header">Стандарт<span class="offers-table__header-price">3,99 USD</span>
+            <div class="offers-table__header-hit">
+              хит
+            </div>
+          </th>
+          <th class="offers-table__header">Анлим<span class="offers-table__header-price">3,99 USD</span></th>
+        </tr>
+        <tr class="offers-table__row">
+          <td class="offers-table__cell offers-table__cell--hidden">Розовый фильтр</td>
+          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
+          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
+          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
+        </tr>
+        <tr class="offers-table__row">
+          <td class="offers-table__cell  offers-table__cell--hidden">Смайлики</td>
+          <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Смайлики</span></td>
+          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Смайлики</span></td>
+          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Смайлики</span></td>
+        </tr>
+        <tr class="offers-table__row">
+          <td class="offers-table__cell  offers-table__cell--hidden">Комментарии</td>
+          <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Комментарии</span></td>
+          <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Комментарии</span></td>
+          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Комментарии</span></td>
+        </tr>
+      </table>
+      <div class="offers-table__link-cont">
+        <a class="offers-table__link"></a>
+        <a class="offers-table__link offers-table__link--current"></a>
+        <a class="offers-table__link"></a>
+      </div>
+    </div>
   </div>
+  <div class="contacts">
+    <div class="contacts__title">Остались вопросы? <br class="contacts__br"> Свяжитесь с нами!</div>
+    <div class="contacts__section"><p class="contacts__text contacts__tel">Звоните:<p class="contacts__text contacts__text--red">+7 (812) 555-66-66</p></p></div>
+    <div class="contacts__section"><p class="contacts__text contacts__mail">Пишите:<p class="contacts__text contacts__text--red">mail@htmlacademy.ru</p></p></div>
+    <div class="contacts__section"><p class="contacts__text contacts__addr">Приезжайте в гости:<p class="contacts__text contacts__text--red">ул. Большая Конюшенная, 19/8 </p></p></div>
+
+  </div>
+</div>
+<div class="map">
+  <svg class="triangle-white-footer" version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
+  <polygon fill="#FFFFFF" points="297.64,61.905 0,0 595.28,0 "/>
+</svg>
+<iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7586693335606!2d30.318841623232842!3d59.93614659377484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjEiTiAzMMKwMTknMTUuNSJF!5e0!3m2!1sru!2sse!4v1444683482417" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
 </main>
 <footer class="main-footer main-footer-hidden">
-  <img class="main-footer__pink-logo" src="img/glasses.png" width="145" height="40" alt="">
+  <picture>
+  <source media="(min-width:1200px)" srcset="img/logotype-blue-desktop.svg" alt="">
+    <img class="main-footer__pink-logo" src="img/glasses.png" width="145" height="40" alt="">
+  </picture>
   <div class="main-footer__social-links">
     <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--twitter"></a>
     <a href="#" class="main-footer__social-links-btn main-footer__social-links-btn--facebook"></a>

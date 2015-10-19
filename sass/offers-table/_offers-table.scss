@@ -1,19 +1,22 @@
 .offers-table {
   width: 833px;
-  margin: 40px 0 40px -256px;
+  margin: 50px 0 40px -256px;
   border: 2px solid $border-color;
+  border-top: none;
   border-collapse: collapse;
   text-transform: uppercase;
 
 
   &__header {
-    height: 100px;
+    height: 98px;
     background: $dark-blue;
     color: white;
     font-size: 18px;
     font-weight: bold;
     line-height: 30px;
     border: 2px solid $border-color;
+  border-top: none;
+  border-bottom: none;
     border-collapse: collapse;
     position: relative;
     overflow: hidden;
@@ -38,6 +41,7 @@
     display: block;
     font-weight: normal;
     font-size: 24px;
+    font-weight: 300;
   }
 
   &__cell {
@@ -45,12 +49,15 @@
     height: 60px;
     padding: 0 22px;
     font-size: 14px;
+    font-weight: 400;
     border: 2px solid $border-color;
+    border-top: none;
     border-collapse: collapse;
     background: white;
   }
   &__cell--hidden {
     display: none;
+    border: 2px solid $border-color;
   }
   &__cell--cross {
     background: white url('../img/no.svg') no-repeat 90% 50%;
