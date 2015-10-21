@@ -38,3 +38,27 @@
     display: block;
   }
 }
+@media (min-width: 1200px) {
+  .effect-block {
+    background: $gray-95;
+    padding: 0 130px;
+
+    &__img {
+      padding: 67px 67px 67px 0;
+    }
+    &__br {
+      display: none;
+    }
+    &__title {
+      line-height: 30px;
+    }
+    &__text {
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &__link {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}

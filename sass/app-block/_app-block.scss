@@ -19,6 +19,15 @@
     line-height: 50px;
     text-align: center;
     margin: 0 auto;
+    &:hover {
+      background: white;
+      color: $pink;
+      border: 3px solid white;
+    }
+    &:active {
+      color: transparentize($pink, 0.7);
+      border: 3px solid white;
+    }
   }
   &__platform-logos-cont {
     display: flex;
@@ -53,6 +62,21 @@
     }
     &__platform-logos {
       padding: 40px 0 20px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .app-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 0 0 125px;
+    padding-bottom: 125px;
+    height: 280px;
+    &__download-btn {
+      width: 300px;
+      font-size: 21px;
+      font-weight: bold;
     }
   }
 }

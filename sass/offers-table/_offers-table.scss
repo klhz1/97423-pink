@@ -15,8 +15,8 @@
     font-weight: bold;
     line-height: 30px;
     border: 2px solid $border-color;
-  border-top: none;
-  border-bottom: none;
+    border-top: none;
+    border-bottom: none;
     border-collapse: collapse;
     position: relative;
     overflow: hidden;
@@ -80,10 +80,22 @@
     border-radius: 50%;
     vertical-align: middle;
     margin: 0px 20px 0 0;
+    &:hover {
+      background-color: #7e868f;
+    }
+    &:active {
+      background-color: #e9ebec;
+    }
   }
   &__link--current {
     background-color: transparent;
     border: 3px solid $dark-blue;
+    &:hover {
+      background-color: transparent;
+    }
+    &:active {
+      background-color: transparent;
+    }
   }
 }
 
@@ -153,6 +165,31 @@
     }
     &__link-cont {
       display: none;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .offers-table {
+    margin: 0 130px;
+    width: inherit;
+    &__header {
+      height: 98px;
+      width: 234px;
+      font-size: 18px;
+      &-hit {
+        top: 11px;
+        left: -35px;
+        width: 125px;
+      }
+    }
+
+    &__header-price {
+      font-size: 24px;
+    }
+    &__cell {
+      width: 234px;
+      height: 59px;
+      padding: 0 24px;
     }
   }
 }

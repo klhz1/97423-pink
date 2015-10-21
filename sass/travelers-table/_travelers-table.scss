@@ -1,0 +1,140 @@
+.travelers__field-cont{
+  text-align: center;
+}
+
+.travelers-table {
+  border-top: 2px solid $border-color;
+  font-weight: 400;
+  margin: 40px 0 0;
+  padding: 30px 0 0;
+  &__data-cont {
+    display: inline-block;
+  }
+  &__data {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    margin-left: 61px;
+  }
+
+  &__label {
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    text-transform: uppercase;
+    padding: 0 0 0 23px;
+  }
+  &__nr-label {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    text-align: center;
+  }
+  &__nr {
+    position: absolute;
+  }
+  &__nr-number {
+    font-size: 18px;
+    line-height: 59px;
+    text-align: center;
+    color: $dark-blue;
+  }
+  &__nr-number {
+    display: block;
+    width: 63px;
+    height: 63px;
+    border: 2px solid $border-color;
+    background: $gray-95;
+    box-sizing: border-box;
+    margin: 5px 0 0 0;
+  }
+  &__field {
+    display: block;
+    width: 219px;
+    height: 63px;
+    font-size: 18px;
+    padding: 0 22px;
+    color: $dark-blue;
+    border: 2px solid $border-color;
+    box-sizing: border-box;
+    margin: 5px 0 13px 0;
+    &:hover {
+      border-color: $dark-blue;
+    }
+    &:focus {
+      border-color: $pink;
+    }
+  }
+  &__del {
+    display: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: right;
+    &-link {
+      color: $dark-blue;
+      line-height: 63px;
+      &:hover {
+        text-decoration: underline;
+        color: $pink;
+      }
+      &:active {
+        opacity: .3;
+      }
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .travelers-table {
+    &__data {
+      justify-content: space-between;
+      margin-left: 83px;
+    }
+    &__nick {
+      order: 3;
+      margin-right: 60px;
+    }
+  }
+}
+@media (min-width: 470px) {
+  .travelers-table {
+    &__del {
+      display: inline-block;
+    }
+  }
+}
+@media (min-width: 700px) {
+  .travelers__field-cont{
+    text-align: left;
+  }
+  .travelers-table {
+    &__field {
+      width: 300px;
+    }
+    &__nick {
+      margin: 0;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .travelers-table {
+    &__data {
+      align-items: initial;
+      width: 730px;
+    }
+    &__nick {
+      order: initial;
+    }
+    &__del {
+      align-self: center;
+      width: 97px;
+    }
+  }
+  .travelers__field-cont {
+    width: 252px;
+    padding: 0;
+  }
+}

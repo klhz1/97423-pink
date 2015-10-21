@@ -43,3 +43,24 @@
     }
   }
 }
+
+@media (min-width: 1200px) {
+  .contacts {
+    padding: 0 130px;
+    &__br {
+      display: inline-block;
+    }
+    &__title {
+      flex-basis: 100%;
+      font-size: 50px;
+      line-height: 60px;
+      padding: 60px 0;
+    }
+    &__section:nth-child(3) {
+      order: 10;
+    }
+    &__text {
+      padding-bottom: 30px;
+    }
+  }
+}
