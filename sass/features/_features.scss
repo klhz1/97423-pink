@@ -32,8 +32,11 @@
     }
   }
   &__iphone-screen-3 {
-    display: block;
     margin: 0 auto;
+    display: none;
+    &--mobile {
+      display: block;
+    }
   }
   &__iphone-screen-1 {
     display: none;
@@ -51,9 +54,13 @@
       padding: 0 40px;
     }
     &__iphone-screen-3 {
+      display: block;
       position: relative;
       top: -45px;
       margin: 0 0 -45px 0;
+      &--mobile {
+        display: none;
+      }
     }
     &__title-cont {
       font-size: 40px;

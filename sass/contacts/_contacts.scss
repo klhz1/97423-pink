@@ -9,15 +9,16 @@
   }
 
   &__text{
-    padding: 0 40px 10px;
+    padding: 0 20px 10px;
     font-size: 18px;
     line-height: 18px;
     font-weight: bold;
     &--red{
       font-size: 24px;
       line-height: 24px;
-      font-weight: lighter;
+      font-weight: 300;
       color: $pink;
+      padding-top: 10px;
     }
   }
   &__br {
@@ -47,6 +48,9 @@
 @media (min-width: 1200px) {
   .contacts {
     padding: 0 130px;
+    &__text--red {
+      padding-top: 30px;
+    }
     &__br {
       display: inline-block;
     }

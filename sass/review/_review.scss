@@ -48,6 +48,9 @@
   &__arrow-left {
     display: none;
     order: -3;
+    &:hover {
+      cursor: pointer;
+    }
     &-img{
       &:hover path{
         fill:#7e868f;
@@ -60,9 +63,13 @@
   &__arrow-right {
     display: none;
     order: -1;
+    &:hover {
+      cursor: pointer;
+    }
     &-img{
       &:hover path{
         fill:#7e868f;
+        cursor: pointer;
       }
       &:active path{
         fill:#eaeced;

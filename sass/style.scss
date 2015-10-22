@@ -26,9 +26,13 @@ img {
 }
 
 .main-header {
-  background: #2a3948 url("../img/background-mobile@1x.jpg") no-repeat 50% top;
+  background-color: #2a3948;
+  background-repeat: no-repeat;
+  background-image: url("../img/background-mobile@1x.jpg");
+  background-position: 50% top;
   position: relative;
 }
+
 
 .page-title {
   font-size: 24px;
@@ -44,7 +48,10 @@ img {
 .intro-img {
   display: block;
   height: 286px;
-  background: url("../img/iphone-hand-mobile.png") no-repeat 50%;
+  background-image: url("../img/iphone-hand-mobile.png");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 258px auto;
 }
 
 .text-pink {
@@ -87,8 +94,7 @@ img {
     width: 700px;
   }
   .main-header {
-    background: #2a3948 url("../img/background-tablet@1x.jpg") no-repeat 50% top;
-    /*width: 700px;*/
+    background-image: url("../img/background-tablet@1x.jpg");
   }
 
   .page-title {
@@ -117,6 +123,7 @@ img {
     height: 545px;
     margin: 0;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat top left;
+    background-size: 700px auto;
   }
 
   .offers-block {
@@ -141,7 +148,7 @@ img {
     width: 1200px;
   }
   .main-header {
-    background: #2a3948 url("../img/background-fullsize.jpg") no-repeat;
+    /*background-image: url("../img/background-tablet@1x.jpg");*/
     background-size: cover;
   }
 
@@ -163,6 +170,7 @@ img {
   .intro-img {
     width: 1050px;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat top left;
+    background-size: 1050px auto;
     height: 645px;
     bottom: 0;
     right: 0;
@@ -180,3 +188,29 @@ img {
     height: 520px;
   }
 }
+@media (min-resolution: 1.5dppx) {
+  .main-header {
+    background-image: url("../img/background-mobile@2x.jpg");
+  }
+  .intro-img {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+  }
+}
+@media (min-width: 700px) and (min-resolution: 1.5dppx) {
+  .main-header {
+    background-image: url("../img/background-tablet@2x.jpg");
+  }
+  .intro-img {
+    background-image: url("../img/iphone-hand-tablet@2x.png");
+  }
+}
+@media (min-width: 1200px) and (min-resolution: 1.5dppx) {
+  .main-header {
+    background-image: url("../img/background-fullsize.jpg");
+  }
+  .intro-img {
+    background-image: url("../img/iphone-hand-desktop@2x.png");
+  }
+}
+
+
