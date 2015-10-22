@@ -6,6 +6,24 @@
   &__pink-logo {
     display: block;
     margin: 30px 0;
+    &-mobile{
+      display: block;
+      &:hover path{
+        fill:$pink;
+      }
+      &:active path{
+        opacity: .3;
+      }
+    }
+    &-desktop {
+      display: none;
+      &:hover path{
+        fill:$pink;
+      }
+      &:active path{
+        opacity: .3;
+      }
+    }
   }
   &__social-links {
     display: flex;
@@ -27,6 +45,12 @@
     &--youtube {
       background: url('../img/youtube.svg') no-repeat 55% 50%;
     }
+    &:hover {
+      border-color: $dark-blue;
+    }
+    &:active {
+      opacity: .3;
+    }
   }
   &__developer {
     display: flex;
@@ -42,6 +66,13 @@
   &__developer-logo {
     display: block;
     margin-left: 15px;
+    fill: $pink;
+    &:hover {
+      fill: $dark-blue;
+    }
+    &:active {
+      fill: #bec2c7;
+    }
   }
 
 }
@@ -55,14 +86,25 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 40px;
-    &__ping-logo {
-      margin: 0;
-    }
     &__social-links {
       margin: 0;
     }
     &__developer {
       margin: 0;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .main-footer {
+    padding: 40px 130px;
+
+    &__pink-logo {
+      &-mobile{
+        display: none;
+      }
+      &-desktop {
+        display: block;
+      }
     }
   }
 }

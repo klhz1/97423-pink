@@ -1,4 +1,5 @@
 .form{
+  font-weight: 400;
   &__container{
     padding: 30px 20px;
 
@@ -38,6 +39,12 @@
     margin: auto;
     margin-bottom: 10px;
     box-sizing: border-box;
+    &:hover {
+      border-color: $dark-blue;
+    }
+    &:focus {
+      border-color: $pink;
+    }
 
     &--minus {
       display: inline-block;
@@ -47,22 +54,39 @@
       font-size: 40px;
       padding: 0;
       text-align: center;
+      position: relative;
+      &:hover {
+        border-color: $dark-blue;
+      }
+      &:active {
+        color: white;
+        background: $dark-blue;
+      }
+    }
+    &--plus {
       margin-left: -6px;
     }
 
+
     &--duration {
       display: inline-block;
-      width: 160px;
+      width: 157px;
       vertical-align: middle;
       margin-left: -6px;
+      &:hover {
+        border-color: $border-color;
+      }
     }
     &--travelers {
       display: inline-block;
-      width: 160px;
+      width: 157px;
       vertical-align: middle;
       margin-left: -6px;
+      &:hover {
+        border-color: $border-color;
+      }
     }
-    &
+
 
     &-label {
       display: block;
@@ -93,7 +117,7 @@
     font-size: 14px;
     text-align: center;
     font-weight: 400;
-    padding: 0 15px 30px;
+    padding: 0 15px 20px;
   }
   &__list {
     list-style: none;
@@ -130,6 +154,17 @@
   0 0 0 10px white,
   0 0 0 12px $border-color;
 }
+.form__radio[type="radio"] + .form__list-label:hover:before {
+  box-shadow:
+  0 0 0 10px white,
+  0 0 0 12px $dark-blue;
+}
+.form__radio[type="radio"] + .form__list-label:active:before {
+  box-shadow:
+  0 0 0 10px white,
+  0 0 0 12px $pink;
+}
+
 .form__radio[type="radio"], .form__checkbox[type="checkbox"] {
   display: none;
 }
@@ -150,6 +185,12 @@
   background: white;
   border: 2px solid $border-color;
 }
+.form__checkbox[type="checkbox"] + .form__list-label:hover:before {
+  border-color: $dark-blue;
+}
+.form__checkbox[type="checkbox"] + .form__list-label:active:before {
+  border-color: $pink;
+}
 .form__checkbox[type="checkbox"]:checked + .form__list-label:before {
   background: url('../img/yes-pink.svg') no-repeat 50% 50%;
 }
@@ -158,21 +199,21 @@
   .form{
     &__header {
       font-size:18px;
-      padding: 100px 100px 30px;
+      padding: 95px 100px 0px;
       font-weight: 400;
     }
     &__header-hidden-text {
       display: inline;
     }
     &__container {
-      padding: 30px 40px;
+      padding: 25px 40px;
     }
     &__container--gray {
       background: none;
     }
     &__fieldset {
       border: 2px solid $border-color;
-      padding: 30px 52px;
+      padding: 30px 58px;
     }
     &__legend {
       padding: 0 20px;
@@ -180,7 +221,10 @@
     &__item {
       width: 240px;
       display: inline-block;
-      padding: 20px 5px 0px;
+      padding: 20px 0 0 0;
+      &--start {
+        margin-right: 15px;
+      }
     }
     &__title {
       padding: 5px 10px 0;
@@ -201,7 +245,67 @@
       width: 130px;
     }
     &__field--duration {
-      width: 118px;
+      width: 117px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .form{
+    &__header {
+      margin: 0 auto;
+      max-width: 760px;
+      padding-left: 90px 0 40px;
+    }
+    &__item {
+      padding: 0;
+      margin: 0;
+    }
+    &__fieldset {
+      padding: 20px 58px 30px;
+    }
+    &__field {
+      width: 300px;
+      &--start {
+        width: 240px;
+      }
+      &--duration {
+        width: 129px;
+      }
+      &--end {
+        width: 240px;
+      }
+      &--minus {
+        width: 63px;
+      }
+      &--travelers {
+        width: 129px;
+      }
+      &-cont {
+        display: inline-block;
+      }
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__container {
+      padding: 0 130px 55px;
+      &--name {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 60px;
+      }
+      &--app {
+        display: flex;
+        justify-content: space-around;
+      }
+      &--date {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &__submit-container {
+      padding: 0 130px;
     }
   }
 }

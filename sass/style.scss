@@ -26,7 +26,7 @@ img {
 }
 
 .main-header {
-  background: url("../img/background-mobile@1x.jpg") no-repeat 50% top;
+  background: #2a3948 url("../img/background-mobile@1x.jpg") no-repeat 50% top;
   position: relative;
 }
 
@@ -66,6 +66,8 @@ img {
 }
 
 
+
+
 @import "navigation/navigation";
 @import "app-block/app-block";
 @import "features/features";
@@ -73,7 +75,7 @@ img {
 @import "offers-table/offers-table";
 @import "contacts/contacts";
 @import "form/form";
-@import "travelers/travelers";
+@import "travelers-table/travelers-table";
 @import "button/button";
 @import "main-container/main-container";
 @import "main-footer/main-footer";
@@ -85,8 +87,8 @@ img {
     width: 700px;
   }
   .main-header {
-    background: url("../img/background-tablet@1x.jpg") no-repeat 50% top;
-    width: 700px;
+    background: #2a3948 url("../img/background-tablet@1x.jpg") no-repeat 50% top;
+    /*width: 700px;*/
   }
 
   .page-title {
@@ -101,7 +103,7 @@ img {
       font-size: 50px;
       line-height: 60px;
       margin: 0;
-      padding: 80px;
+      padding: 69px 80px 80px;
       text-align: center;
       font-weight: lighter;
     }
@@ -110,7 +112,7 @@ img {
   .intro-img {
     position: absolute;
     bottom: 0;
-    left: 0;
+    right: 0;
     width: 700px;
     height: 545px;
     margin: 0;
@@ -129,8 +131,52 @@ img {
     height: 50px;
   }
   .triangle-white-footer {
-    max-width: 95%;
+    max-width: 700px;
     height: 75px;
   }
+}
 
+@media (min-width: 1200px) {
+  body {
+    width: 1200px;
+  }
+  .main-header {
+    background: #2a3948 url("../img/background-fullsize.jpg") no-repeat;
+    background-size: cover;
+  }
+
+  .triangle-white {
+    height: 90px;
+  }
+
+  .page-title {
+    font-size: 50px;
+    max-width: 231px;
+    margin: 110px 0 0 165px;
+    line-height: 60px;
+    &--form {
+      max-width: 745px;
+      margin: 0 auto;
+    }
+  }
+
+  .intro-img {
+    width: 1050px;
+    background: url("../img/iphone-hand-desktop@1x.png") no-repeat top left;
+    height: 645px;
+    bottom: 0;
+    right: 0;
+  }
+
+  .offers-block {
+    padding: 60px 0 95px;
+  }
+
+  .triangle-white-footer {
+    height: 125px;
+    max-width: 1200px;
+  }
+  .map__iframe {
+    height: 520px;
+  }
 }
