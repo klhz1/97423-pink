@@ -1,4 +1,4 @@
-@import 'variables';
+@import 'components/variables';
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -30,6 +30,7 @@ img {
   background-repeat: no-repeat;
   background-image: url("../img/background-mobile@1x.jpg");
   background-position: 50% top;
+  background-size: cover;
   position: relative;
 }
 
@@ -75,18 +76,18 @@ img {
 
 
 
-@import "navigation/navigation";
-@import "app-block/app-block";
-@import "features/features";
-@import "review/review";
-@import "offers-table/offers-table";
-@import "contacts/contacts";
-@import "form/form";
-@import "travelers-table/travelers-table";
-@import "button/button";
-@import "main-container/main-container";
-@import "main-footer/main-footer";
-@import "effect-block/effect-block";
+@import "components/navigation";
+@import "components/app-block";
+@import "components/features";
+@import "components/review";
+@import "components/offers-table";
+@import "components/contacts";
+@import "components/form";
+@import "components/travelers-table";
+@import "components/button";
+@import "components/main-container";
+@import "components/main-footer";
+@import "components/effect-block";
 
 
 @media (min-width: 700px) {
