@@ -99,6 +99,14 @@ module.exports = function(grunt) {
         src: ["sass/**/*.scss"]
       }
     },
+    uglify: {
+      my_target: {
+        files: {
+          "build/js/script.min.js": ["source/js/*.js"]
+        }
+      }
+    }
+
   };
 
 
@@ -113,6 +121,7 @@ module.exports = function(grunt) {
     "cmq",
     "postcss",
     "cssmin",
+    "uglify",
     "imagemin",
     "htmlmin"
     ]);
