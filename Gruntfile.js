@@ -18,7 +18,7 @@ module.exports = function(grunt) {
           "img/**",
           "js/**",
           "index.html",
-          "form.html"
+          "form.html",
           ],
           dest: "build"
         }]
@@ -27,7 +27,8 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          "build/css/style.css": "source/sass/style.scss"
+          "build/css/style.css": "source/sass/style.scss",
+          "build/css/normalize.css": "source/sass/normalize.scss"
         }
       }
     },
@@ -55,7 +56,8 @@ module.exports = function(grunt) {
       },
       style: {
         files: {
-          "build/css/style.min.css": ["build/css/style.css"]
+          "build/css/style.min.css": ["build/css/style.css"],
+          "build/css/normalize.min.css": ["build/css/normalize.css"]
         }
       }
     },
