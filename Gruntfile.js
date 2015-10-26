@@ -1,10 +1,10 @@
-'use strict';
+"use strict";
 
 module.exports = function(grunt) {
-  require('load-grunt-tasks')(grunt);
+  require("load-grunt-tasks")(grunt);
 
   var config = {
-    pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON("package.json"),
 
     clean: {
       build: ["build"]
@@ -17,7 +17,8 @@ module.exports = function(grunt) {
           src: [
           "img/**",
           "js/**",
-          "index.html"
+          "index.html",
+          "form.html"
           ],
           dest: "build"
         }]
@@ -26,7 +27,7 @@ module.exports = function(grunt) {
     sass: {
       style: {
         files: {
-          'build/css/style.css': 'source/sass/style.scss'
+          "build/css/style.css": "source/sass/style.scss"
         }
       }
     },
@@ -40,11 +41,11 @@ module.exports = function(grunt) {
     postcss: {
       options: {
         processors: [
-        require('autoprefixer')({browsers: 'last 2 versions'})
+        require("autoprefixer")({browsers: "last 2 versions"})
         ]
       },
       style: {
-        src: 'build/css/style.css'
+        src: "build/css/style.css"
       }
     },
     cssmin: {
@@ -79,14 +80,15 @@ module.exports = function(grunt) {
       },
       html: {
         files: {
-          "build/index.min.html": "build/index.html"
+          "build/index.min.html": "build/index.html",
+          "build/form.min.html": "build/form.html"
         }
       }
     },
     watch: {
       style: {
-        files: ['sass/**/*.scss'],
-        tasks: ['sass', 'postcss'],
+        files: ["sass/**/*.scss"],
+        tasks: ["sass", "postcss"],
         options: {
           spawn: false,
           livereload: true
@@ -102,7 +104,8 @@ module.exports = function(grunt) {
     uglify: {
       my_target: {
         files: {
-          "build/js/script.min.js": ["source/js/*.js"]
+          "build/js/script.min.js": ["source/js/script.js"],
+          "build/js/picturefill.min.js": ["source/js/picturefill.js"]
         }
       }
     }
@@ -110,7 +113,7 @@ module.exports = function(grunt) {
   };
 
 
-  config = require('./.gosha')(grunt, config);
+  config = require("./.gosha")(grunt, config);
 
   grunt.initConfig(config);
 

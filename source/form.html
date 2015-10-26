@@ -6,7 +6,8 @@
   <title>PINK</title>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800" rel="stylesheet" type="text/css">
+  <script src="picturefill.js" async></script>
 </head>
 <body>
   <header class="main-header">
@@ -316,8 +317,8 @@
     <div class="form__container">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="form__list">
-          <div class="form__list-cont">
+        <div class="form__list">
+          <ul class="form__list-cont">
             <li class="form__list-item">
               <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-1" checked="checked">
               <label class="form__list-label" for="checkbox-1">Сделал селфи с акулой
@@ -328,8 +329,9 @@
               <label class="form__list-label" for="checkbox-2">Обгорел на пляже
               </label>
             </li>
-          </div>
-          <div class="form__list-cont">
+          </ul>
+
+          <ul class="form__list-cont">
             <li class="form__list-item">
               <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-3">
               <label class="form__list-label" for="checkbox-3">Видел Чака Норриса
@@ -340,8 +342,9 @@
               <label class="form__list-label" for="checkbox-4">Накупил сувениров
               </label>
             </li>
-          </div>
-          <div class="form__list-cont">
+          </ul>
+
+          <ul class="form__list-cont">
             <li class="form__list-item">
               <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-5" checked="checked">
               <label class="form__list-label" for="checkbox-5">Удержал башню
@@ -352,8 +355,8 @@
               <label class="form__list-label" for="checkbox-6">Разгромил отель
               </label>
             </li>
-          </div>
-        </ul>
+          </ul>
+        </div>
       </fieldset>
     </div>
     <div class="form__container form__container--gray">
@@ -502,5 +505,5 @@
 </div>
 </div>
 </footer>
-  <script src="js/script.js" type="text/javascript"></script>
+<script src="js/script.js" type="text/javascript"></script>
 </body>
