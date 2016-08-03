@@ -12,7 +12,7 @@
 <body>
   <header class="main-header">
     <nav class="navigation">
-      <a class="navigation__logo" href="#"><svg class="navigation__logo-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+      <a class="navigation__logo" href="index.html"><svg class="navigation__logo-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
         <g>
           <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064
@@ -176,201 +176,207 @@
 </li>
 <li class="navigation__menu-item"><a class="navigation__menu-item-link" href="#">Отзывы</a>
 </li>
-<li class="navigation__menu-item"><a class="navigation__menu-item-link" href="form.html">Конкурс</a>
+<li class="navigation__menu-item"><a class="navigation__menu-item-link" href="#">Конкурс</a>
 </li>
 </ul>
 </div>
 </nav>
-<h1 class="page-title">Взгляните на жизнь иначе!</h1>
-<div class="intro-img"></div>
-<div class="app-block">
-  <a class="app-block__download-btn" href="#">Скачать приложение</a>
-  <div class="app-block__platform-logos-cont">
-    <img src="img/apple-logo.svg" alt="" class="app-block__platform-logos">
-    <img src="img/android-logo.svg" alt="" class="app-block__platform-logos">
-    <img src="img/microsoft-logo.svg" alt="" class="app-block__platform-logos">
-  </div>
-  <p class="app-block__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-</div>
+<h1 class="page-title page-title--form">Конкурс на самое безбашеное путешествие с Пинк</h1>
 </header>
+
 <main>
+  <p class="form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form__header-hidden-text"> Пожалуйста, заполните форму ниже:</span></p>
 
-  <div class="features">
-    <div class="features__title-cont">
-      <p class="features__title">Устали от серости мегаполиса?</p>
-      <p class="features__title">Нам есть, что вам <br> предложить!</p>
+  <form method="post" class="form">
+    <div class="form__container form__container--name">
+
+      <div class="form__field-cont">
+        <label class="form__field-label" for="name">Имя:*
+        </label>
+        <input class="form__field" type="text" name="name" id="name" value="Введите ваше имя" required>
+      </div>
+
+      <div class="form__field-cont">
+        <label class="form__field-label" for="surname">Фамилия:*
+        </label>
+        <input class="form__field" type="text" name="surname" id="surname" value="Укажите фамилию" required>
+      </div>
+
+      <div class="form__field-cont">
+        <label class="form__field-label" for="patronim">Отчество:*
+        </label>
+        <input class="form__field" type="text" name="patronim" id="patronim" value="Ну и отчество тоже" required>
+      </div>
+
     </div>
-    <div class="main-container--gray">
-      <svg class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
-      <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-    </svg>
-    <div class="features__container">
-
-      <div class="features__item">
-        <h2 class="features__item-title">Поднимает настроение</h2>
-        <p class="features__item-text">Приложение позволит вам победить осеннюю хандру и деперессию буквально в несколько кликов!</p>
-      </div>
-      <div class="features__item">
-        <h2 class="features__item-title">Меняет мир вокруг</h2>
-        <p class="features__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-      </div>
-      <div class="features__item">
-        <h2 class="features__item-title">Заводит новых друзей</h2>
-        <p class="features__item-text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
-      </div>
-      <div class="features__iphone-cont">
-        <picture>
-          <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-1@1x.png, img/iphone-screen-desktop-1@2x.png 2x">
-            <img class="features__iphone-screen-1" src="img/iphone-screen-tablet-1@1x.png" srcset="img/iphone-screen-tablet-1@2x.png 2x" width="292" alt="">
-          </picture>
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-2@1x.png, img/iphone-screen-desktop-2@2x.png 2x">
-              <img class="features__iphone-screen-2" src="img/iphone-screen-tablet-2@1x.png" srcset="img/iphone-screen-tablet-2@2x.png 2x" width="292" alt="">
-            </picture>
-            <picture>
-              <source media="(min-width:1200px)" srcset="img/iphone-screen-desktop-3@1x.png">
-                <img class="features__iphone-screen-3" src="img/iphone-screen-tablet-3@1x.png" srcset="img/iphone-screen-mobile-3@2x.png 2x" width="292" alt="">
-              </picture>
-              <img class="features__iphone-screen-3 features__iphone-screen-3--mobile" src="img/screen-mobile-3.png" width="156" height="278" alt="">
-            </div>
+    <div class="form__container form__container--gray">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">С каким приложением путешествовали?*</legend>
+        <ul class="form__list form__container--app">
+          <li class="form__list-item">
+            <input class="form__radio" type="radio" name="app" id="ios">
+            <label class="form__list-label" for="ios">Pink для iOS</label>
+          </li>
+          <li class="form__list-item">
+            <input class="form__radio" type="radio" name="app" id="android">
+            <label class="form__list-label" for="android">Pink на Android</label>
+          </li>
+          <li class="form__list-item">
+            <input class="form__radio" type="radio" name="app" id="winphone">
+            <label class="form__list-label" for="winphone">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+    </div>
+    <div class="form__container">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Когда вы путешествовали? *</legend>
+        <div class="form__container--date">
+          <div class="form__item form__item--start">
+            <input class="form__field form__field--start" type="date" name="date" id="date" value="2015-04-01" required>
+            <label class="form__title" for="date">дата выезда
+            </label>
+          </div>
+          <div class="form__item travelers__field-cont">
+            <span class="form__field form__field--minus">-</span>
+            <input class="form__field form__field--duration" type="number" name="date2" id="date2" value="10" min="1" step="1" required>
+            <span class="form__field form__field--minus form__field--plus">+</span>
+            <label class="form__title" for="date2">Продолжительность
+            </label>
+          </div>
+          <div class="form__item">
+            <input class="form__field form__field--end" type="date" name="date3" id="date3" value="2015-04-01" disabled>
+            <label class="form__title" for="date3">Дата Возвращения
+            </label>
           </div>
         </div>
-      </div>
-      <div class="main-container">
-        <div class="effect-block">
-          <picture>
-            <source media="(min-width:1200px)" srcset="img/timer-desktop.png">
-              <img class="effect-block__img" src="img/timer.png" width="262" height="302" alt="">
-            </picture>
-            <h2 class="effect-block__title">Эффект<br class="effect-block__br"> на 24 часа!
-            </h2>
-            <p class="effect-block__text">Британские ученые провели исследования
-              и доказали, что положительный эффект
-              от использования приложения длится
-              целые сутки!</p>
-              <a href="" class="effect-block__link">Узнать больше об исследовании</a>
-            </div>
+      </fieldset>
+    </div>
+    <div class="form__container form__container--gray">
 
-
-            <div class="review">
-              <svg class="review__quotes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="78.673px" height="63.788px" viewBox="0 0 78.673 63.788" enable-background="new 0 0 78.673 63.788" xml:space="preserve">
-              <g>
-                <path fill="#efefef" d="M72.354,39.632c-2.797-2.401-6.636-3.604-11.518-3.604h-5.67c0.473-4.081,1.278-7.397,2.421-9.948
-                c1.141-2.551,2.854-5.044,5.139-7.477c2.363-2.51,4.685-4.531,6.97-6.063c2.283-1.53,5.274-3.356,8.978-5.477L74.42,0
-                c-2.441,1.495-5.474,3.42-9.096,5.779c-3.623,2.359-7.048,5.228-10.276,8.607c-3.151,3.302-5.83,7.056-8.033,11.261
-                c-2.206,4.204-3.308,8.861-3.308,13.97c0,7.232,1.456,13.07,4.371,17.511c2.913,4.44,7.755,6.661,14.529,6.661
-                c4.33,0,7.737-1.436,10.218-4.311s3.721-5.967,3.721-9.273C76.546,45.559,75.147,42.034,72.354,39.632z"/>
-                <path fill="#efefef" d="M19.019,18.603c2.362-2.51,4.685-4.531,6.97-6.063c2.283-1.53,5.274-3.356,8.978-5.477L30.713,0
-                c-2.441,1.495-5.475,3.42-9.095,5.779c-3.624,2.359-7.05,5.228-10.278,8.607c-3.149,3.302-5.828,7.056-8.032,11.261
-                C1.103,29.851,0,34.508,0,39.616c0,7.232,1.457,13.07,4.371,17.511c2.912,4.44,7.756,6.661,14.529,6.661
-                c4.33,0,7.737-1.436,10.218-4.311c2.481-2.875,3.722-5.967,3.722-9.273c0-4.646-1.399-8.17-4.194-10.572
-                c-2.796-2.401-6.635-3.604-11.517-3.604h-5.671c0.473-4.081,1.3-7.416,2.481-10.007C15.12,23.432,16.812,20.958,19.019,18.603z"/>
-              </g>
-            </svg>
-
-            <div class="review__author">Николай Петров
-              <p class="review__author-info">25 лет, водитель трамвая</p>
-            </div>
-            <div class="review__arrow-left">
-              <svg class="review__arrow-left-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-              <path fill="#bec2c7" d="M2.045,20.859L21.458,1.446c0.331-0.331,0.331-0.867,0-1.198c-0.33-0.331-0.867-0.331-1.197,0L0.248,20.261
-              c-0.331,0.33-0.331,0.867,0,1.197l20.013,20.013c0.164,0.165,0.382,0.248,0.599,0.248s0.434-0.083,0.599-0.248
-              c0.331-0.331,0.331-0.867,0-1.198L2.045,20.859z"/>
-            </svg>
+      <div class="travelers">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Количество попутчиков *</legend>
+          <div class="travelers__field-cont">
+            <span class="form__field form__field--minus">-</span>
+            <input class="form__field form__field--travelers" type="number" name="name" id="trav-num" value="2" min="0" step="1" required>
+            <span class="form__field form__field--minus form__field--plus">+</span>
           </div>
-          <p class="review__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          <div class="review__arrow-right">
-            <svg class="review__arrow-right-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="21.706px" height="41.719px" viewBox="0 0 21.706 41.719" enable-background="new 0 0 21.706 41.719" xml:space="preserve">
-            <path fill="#bec2c7" d="M19.661,20.859L0.248,1.446c-0.331-0.331-0.331-0.867,0-1.198c0.33-0.331,0.867-0.331,1.197,0l20.013,20.012
-            c0.33,0.33,0.33,0.867,0,1.197L1.445,41.471c-0.164,0.165-0.382,0.248-0.599,0.248s-0.434-0.083-0.599-0.248
-            c-0.331-0.331-0.331-0.867,0-1.198L19.661,20.859z"/>
-          </svg>
-        </div>
-        <div class="review__link-cont">
-          <a class="review__link review__link--current" href="#"></a>
-          <a class="review__link" href="#"></a>
-          <a class="review__link" href="#"></a>
-        </div>
-      </div>
-    </div>
-    <div class="main-container--gray">
-      <svg class="triangle-white" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-      width="100%" height="94.074px" viewBox="0 0 1200 94.074" enable-background="new 0 0 1200 94.074" xml:space="preserve" preserveAspectRatio="none">
-      <polygon fill="#ffffff" points="1200,0 0,0 0,94.074 "/>
-    </svg>
-    <div class="offers-block">
-      <table class="offers-table">
-        <tr class="offers-table__row">
-          <th class="offers-table__empty  offers-table__cell--hidden"></th>
-          <th class="offers-table__header">База<span class="offers-table__header-price">3,99 USD</span></th>
-          <th class="offers-table__header">Стандарт<span class="offers-table__header-price">3,99 USD</span>
-            <div class="offers-table__header-hit">
-              хит
+
+          <div class="travelers-table">
+            <div class="travelers-table__unit">
+              <div class="travelers-table__nr">
+                <span class="travelers-table__nr-label">№</span>
+                <span class="travelers-table__nr-number">1</span>
+              </div>
+
+              <div class="travelers-table__data">
+                <div class="travelers-table__name">
+                  <label class="travelers-table__label" for="name1">ИМЯ:*</label>
+                  <input class="travelers-table__field" type="text" name="name" id="name1" value="Введите ваше имя" required>
+                </div>
+                <div class="travelers-table__nick">
+                  <label class="travelers-table__label" for="nick1">ПРОЗВИЩЕ:
+                    <input class="travelers-table__field" type="text" name="name" id="nick1" value="Ну как же без этого!">
+                  </label>
+                </div>
+                <div class="travelers-table__del">
+                  <a class="travelers-table__del-link" href="#">удалить</a>
+                </div>
+              </div>
             </div>
-          </th>
-          <th class="offers-table__header">Анлим<span class="offers-table__header-price">3,99 USD</span></th>
-        </tr>
-        <tr class="offers-table__row">
-          <td class="offers-table__cell offers-table__cell--hidden">Розовый фильтр</td>
-          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
-          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
-          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Розовый фильтр</span></td>
-        </tr>
-        <tr class="offers-table__row">
-          <td class="offers-table__cell  offers-table__cell--hidden">Смайлики</td>
-          <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Смайлики</span></td>
-          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Смайлики</span></td>
-          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Смайлики</span></td>
-        </tr>
-        <tr class="offers-table__row">
-          <td class="offers-table__cell  offers-table__cell--hidden">Комментарии</td>
-          <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Комментарии</span></td>
-          <td class="offers-table__cell offers-table__cell--cross"><span class="offers-table__cell-text">Комментарии</span></td>
-          <td class="offers-table__cell offers-table__cell--check"><span class="offers-table__cell-text">Комментарии</span></td>
-        </tr>
-      </table>
-      <div class="offers-table__link-cont">
-        <a class="offers-table__link" href="#"></a>
-        <a class="offers-table__link offers-table__link--current" href="#"></a>
-        <a class="offers-table__link" href="#"></a>
+
+            <div class="travelers-table__unit">
+              <div class="travelers-table__nr">
+                <span class="travelers-table__nr-label">№</span>
+                <span class="travelers-table__nr-number">2</span>
+              </div>
+
+              <div class="travelers-table__data">
+                <div class="travelers-table__name">
+                  <label class="travelers-table__label" for="name2">ИМЯ:*</label>
+                  <input class="travelers-table__field" type="text" name="name" id="name2" value="Введите ваше имя" required>
+                </div>
+                <div class="travelers-table__nick">
+                  <label class="travelers-table__label" for="nick2">ПРОЗВИЩЕ:
+                    <input class="travelers-table__field" type="text" name="name" id="nick2" value="Ну как же без этого!">
+                  </label>
+                </div>
+                <div class="travelers-table__del">
+                  <a class="travelers-table__del-link" href="#">удалить</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </fieldset>
+      </div>
+
+    </div>
+
+    <div class="form__container">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+        <div class="form__list">
+          <ul class="form__list-cont">
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-1" checked="checked">
+              <label class="form__list-label" for="checkbox-1">Сделал селфи с акулой
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-2" checked="checked">
+              <label class="form__list-label" for="checkbox-2">Обгорел на пляже
+              </label>
+            </li>
+          </ul>
+
+          <ul class="form__list-cont">
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-3">
+              <label class="form__list-label" for="checkbox-3">Видел Чака Норриса
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-4">
+              <label class="form__list-label" for="checkbox-4">Накупил сувениров
+              </label>
+            </li>
+          </ul>
+
+          <ul class="form__list-cont">
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-5" checked="checked">
+              <label class="form__list-label" for="checkbox-5">Удержал башню
+              </label>
+            </li>
+            <li class="form__list-item">
+              <input class="form__checkbox" type="checkbox" name="achievments" id="checkbox-6">
+              <label class="form__list-label" for="checkbox-6">Разгромил отель
+              </label>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+    </div>
+    <div class="form__container form__container--gray">
+      <div class="form__photos">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">ВАШИ ФОТОГРАФИИ из поездки *</legend>
+          <input class="button button" type="file" name="img" required>
+        </fieldset>
       </div>
     </div>
-  </div>
-  <div class="contacts">
-    <div class="contacts__title">
-      Остались вопросы? <br class="contacts__br"> Свяжитесь с нами!
+    <div class="form__submit-container">
+      <input class="button button--green" type="submit" value="Отправить форму">
+
+      <p class="form__title form__title--blue"><span class="text-pink">*</span> — обязательные поля</p>
+
     </div>
-    <div class="contacts__section">
-      <div class="contacts__text contacts__tel">Звоните:
-        <p class="contacts__text contacts__text--red">+7 (812) 555-66-66
-        </p>
-      </div>
-    </div>
-    <div class="contacts__section">
-      <div class="contacts__text contacts__mail">Пишите:
-        <p class="contacts__text contacts__text--red">mail@htmlacademy.ru
-        </p>
-      </div>
-    </div>
-    <div class="contacts__section">
-      <div class="contacts__text contacts__addr">Приезжайте в гости:
-        <p class="contacts__text contacts__text--red">ул. Большая Конюшенная, 19/8
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="map">
-    <svg class="triangle-white-footer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-    width="100%" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve" preserveAspectRatio="none">
-    <polygon fill="#FFFFFF" points="297.64,61.905 0,0 595.28,0 "/>
-  </svg>
-  <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7586693335606!2d30.318841623232842!3d59.93614659377484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzEwLjEiTiAzMMKwMTknMTUuNSJF!5e0!3m2!1sru!2sse!4v1444683482417" style="border:0" allowfullscreen></iframe>
-</div>
+  </form>
+
 </main>
+
 <footer class="main-footer main-footer-hidden">
   <a class="main-footer__pink-logo" href="#">
     <svg class="main-footer__pink-logo-mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -501,5 +507,3 @@
 </footer>
 <script src="js/script.min.js" type="text/javascript"></script>
 </body>
-
-</html>
